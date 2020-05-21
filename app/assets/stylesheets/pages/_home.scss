@@ -28,10 +28,12 @@
 
 .bio {
   text-align: center;
+  color: #161616;
   p {
     font-size: 20px;
     line-height: 136%;
     margin: 0 auto;
+    width: 645px;
   }
   h1 {
     font-size: 40px;
@@ -42,6 +44,7 @@
 
 .images {
   display: flex;
+  color: #161616;
   justify-content: center;
   margin-top: 28px;
   .image {
