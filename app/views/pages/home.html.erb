@@ -1,47 +1,89 @@
-<header>
+<header class="home-header">
   <%=  image_tag("") %>
 
   <ul class="links">
-    <li> <i class="fab fa-linkedin-in"></i></li>
-    <li> <i class="fab fa-twitter"></i> </li>
-    <li> <i class="fab fa-github"></i> </li>
-    <li> <i class="fab fa-dribbble"></i> </li>
+    <li> <a target=”_blank” href="https://www.linkedin.com/in/meghanxmartin/"><i aria-label="linkedin" class="fab fa-linkedin-in"></i></a> </li>
+    <li> <a target=”_blank” href="https://twitter.com/meghanxmartin"><i aria-label="twitter" class="fab fa-twitter"></i></a> </li>
+    <li> <a target=”_blank” href="https://github.com/meghanmartin995"><i aria-label="github" class="fab fa-github"></i></a> </li>
+    <li> <a target=”_blank” href="https://dribbble.com/ziganka"><i aria-label="dribbble" class="fab fa-dribbble"></i></a> </li>
   </ul>
 </header>
 
-<section>
-  <%=  image_tag("") %>
+<section class="bio">
+  <%=  image_tag("profile.png", alt: "photo of me") %>
   <h1>Meghan Martin</h1>
-  <p>UI designer. Creative developer. UC Berkeley grad.
-  MA Design Strategy. I make great things on the internet.</p>
+  <p>UI designer. Creative developer. UC Berkeley grad.</p>
+  <p>MA Design Strategy. I make great things on the internet.</p>
 </section>
 
   <div class="images">
-    <div class="image1">
-      <%=  image_tag("") %>
-      <p>UI work</p>
+    <div class="image">
+      <%=  image_tag("", alt: "ui work")%>
+      <p>ui work</p>
     </div>
-    <div class="image2">
-      <%=  image_tag("") %>
+    <div class="image">
+      <%=  image_tag("", alt: "dev work") %>
       <p>dev work</p>
     </div>
-    <div class="image3">
-      <%=  image_tag("") %>
+    <div class="image">
+      <%=  image_tag("", alt: "dev work") %>
       <p>my life</p>
     </div>
   </div>
 
 <section class="image-grid">
-  <%=  image_tag("") %>
-  <%=  image_tag("") %>
-  <%=  image_tag("") %>
-  <%=  image_tag("") %>
-  <%=  image_tag("") %>
-  <%=  image_tag("") %>
+  <div class="project">
+    <%=  image_tag("covid-sm.jpg", alt: "covid project") %>
+    <div class="project-text">
+      <h2 class="description">Covid Science Engine</h2>
+      <p class="description">Designed the xxxxxxxx for
+      xxxxxxx</p>
+    </div>
+  </div>
+  <div class="project">
+    <%=  image_tag("fancier-sm.jpg", alt: "fancier project") %>
+    <div class="project-text">
+      <h2 class="description">Fancier</h2>
+      <p class="description">Designed the xxxxxxxx for
+      xxxxxxx</p>
+    </div>
+  </div>
+  <div class="project">
+    <%=  image_tag("covid-sm.jpg", alt: "cuzu project") %>
+    <div class="project-text">
+      <h2 class="description">Cuzu</h2>
+      <p class="description">Designed the xxxxxxxx for
+    xxxxxxx</p>
+    </div>
+  </div>
+  <div class="project">
+    <%=  image_tag("covid-sm.jpg", alt: "freelance projects") %>
+    <div class="project-text">
+      <h2 class="description">Freelance work</h2>
+      <p class="description">Designed the xxxxxxxx for
+      xxxxxxx</p>
+    </div>
+  </div>
+  <div class="project">
+    <%=  image_tag("covid-sm.jpg", alt: "30 days of websites projects") %>
+    <div class="project-text">
+      <h2 class="description">30 days of websites</h2>
+      <p class="description">Designed the xxxxxxxx for
+      xxxxxxx</p>
+    </div>
+  </div>
+  <div class="project">
+    <%=  image_tag("covid-sm.jpg", alt: "design strategy projects") %>
+    <div class="project-text">
+      <h2 class="description">Design Strategy</h2>
+      <p class="description">Designed the xxxxxxxx for
+      xxxxxxx</p>
+    </div>
+  </div>
 </section>
 
 <footer>
-  <p>follow me on <a href="">twitter</a> for hot takes</p>
+  <p>follow me on <a target=”_blank” href="https://twitter.com/meghanxmartin">twitter</a> for hot takes</p>
   <p>download my <a href="">resume</a></p>
   <p>meghanxmartin@gmail.com</p>
 </footer>

@@ -1,1 +1,127 @@
-// Specific CSS for your home-page
+.home-header {
+  background-image: asset-url('bg.jpg');
+  height: 220px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 70px;
+  margin-bottom: -96px;
+  ul {
+    display: flex;
+    li {
+      margin: 0 10px;
+      i {
+        color: white;
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+.bio {
+  text-align: center;
+  p {
+    font-size: 20px;
+    line-height: 136%;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 14px;
+  }
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  .image {
+    margin: 0 15px;
+  }
+  p {
+    font-family: BentonSans Medium;
+  }
+}
+
+.image-grid {
+  display: grid;
+  margin: 42px auto 0 auto;
+  justify-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+  grid-gap: 20px;
+  max-width: 1150px;
+  .project {
+    // height: 240px;
+    height: 100%;
+    // width: 368px;
+    width: 100%;
+    font-family: Proxima Nova;
+    position: relative;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    .project-text {
+      position: absolute;
+      text-align: center;
+      visibility: hidden;
+      transition: opacity .3s, visibility .3s;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      // background: rgba(121, 121, 121, 0.44);
+      background: rgba(255, 255, 255, 0.44);
+      // color: #fff;
+      visibility: hidden;
+      opacity: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h2 {
+        font-weight: bold;
+        font-size: 21px;
+      }
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.project:hover .project-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.description {
+  transition: .2s;
+  transform: translateY(1em);
+}
+
+.project:hover .description{
+  transform: translateY(0);
+}
+
+footer {
+  display: grid;
+  font-family: Avenir;
+  font-size: 18px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+  margin: 32px 60px;
+  a {
+    color: $black;
+    text-decoration: underline;
+  }
+  a:hover {
+    text-decoration: none;
+    color: $black;
+  }
+}
