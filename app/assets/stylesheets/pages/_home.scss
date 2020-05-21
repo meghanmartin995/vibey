@@ -1,3 +1,7 @@
+.content-container {
+  padding: 0 16px;
+}
+
 .home-header {
   background-image: asset-url('bg.jpg');
   height: 220px;
@@ -15,6 +19,9 @@
         color: white;
         font-size: 32px;
       }
+      i:hover {
+        opacity: .8;
+      }
     }
   }
 }
@@ -29,13 +36,14 @@
   h1 {
     font-size: 40px;
     line-height: 40px;
-    margin-bottom: 14px;
+    margin: 12px 0 14px 0;
   }
 }
 
 .images {
   display: flex;
   justify-content: center;
+  margin-top: 28px;
   .image {
     margin: 0 15px;
   }
@@ -46,17 +54,16 @@
 
 .image-grid {
   display: grid;
-  margin: 42px auto 0 auto;
+  margin: 50px auto;
   justify-content: center;
   justify-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-gap: 20px;
-  max-width: 1150px;
+  max-width: 1500px;
   .project {
-    // height: 240px;
     height: 100%;
-    // width: 368px;
     width: 100%;
+    cursor: pointer;
     font-family: Proxima Nova;
     position: relative;
     img {
@@ -111,11 +118,12 @@ footer {
   display: grid;
   font-family: Avenir;
   font-size: 18px;
+  max-width: 1870px;
   justify-content: center;
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
-  margin: 32px 60px;
+  margin: 32px auto;
   a {
     color: $black;
     text-decoration: underline;
