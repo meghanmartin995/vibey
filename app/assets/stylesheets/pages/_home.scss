@@ -91,11 +91,24 @@
       flex-direction: column;
       h2 {
         font-weight: bold;
-        font-size: 23px;
+        font-size: 26px;
         font-family: Proxima Nova;
       }
       p {
         font-size: 18px;
+      }
+      i {
+        font-size: 24px;
+        margin-right: 6px;
+      }
+      .like {
+        display: flex;
+        margin-top: 12px;
+        font-family: Avenir;
+        font-weight: 300;
+        h3 {
+          font-size: 21px;
+        }
       }
     }
   }
