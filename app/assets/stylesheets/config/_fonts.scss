@@ -1,16 +1,26 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font: "Benton Sans", "sans-serif";
+$headers-font: "Benton Sans Medium", "sans-serif";
+$body-medium: "Benton Sans Medium";
 
 // To use a font file (.woff) uncomment following lines
-// @font-face {
-//   font-family: "Font Name";
-//   src: font-url('FontFile.eot');
-//   src: font-url('FontFile.eot?#iefix') format('embedded-opentype'),
-//        font-url('FontFile.woff') format('woff'),
-//        font-url('FontFile.ttf') format('truetype')
-// }
-// $my-font: "Font Name";
+@font-face {
+  font-family: "Benton Sans";
+  src: font-url('benton-sans-regular.eot');
+  src: font-url('benton-sans-regular.eot?#iefix') format('embedded-opentype'),
+       font-url('benton-sans-regular.woff') format('woff'),
+       font-url('benton-sans-regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "Benton Sans Medium";
+  src: font-url('BentonSans-Medium.eot');
+  src: font-url('BentonSans-Medium.eot?#iefix') format('embedded-opentype'),
+       font-url('BentonSans-Medium.woff') format('woff'),
+       font-url('BentonSans-Medium.ttf') format('truetype')
+}
+
+
+// $my-font: "Benton Sans";
