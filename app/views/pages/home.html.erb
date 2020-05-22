@@ -32,6 +32,7 @@
   </div>
 <div class="content-container">
   <section class="image-grid">
+    <%= link_to covid_path do %>
     <div class="project">
       <%=  image_tag("covid-med.jpg", alt: "covid project") %>
       <div class="project-text">
@@ -43,7 +44,8 @@
         </div>
       </div>
     </div>
-    <div class="project">
+    <% end %>
+    <div class="project-home">
       <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
       <div class="project-text">
         <h2 class="description">Fancier</h2>
@@ -54,18 +56,18 @@
         </div>
       </div>
     </div>
-    <div class="project">
+    <div class="project-home">
       <%=  image_tag("covid-med.jpg", alt: "cuzu project") %>
       <div class="project-text">
         <h2 class="description">Cuzu</h2>
-        <p class="description">Designed a productivity application for learning how to code</p>
+        <p class="description">Designed a productivity application for learning <br>how to code</p>
         <div class="description like">
           <i class="far fa-heart"></i>
           <h3>0</h3>
         </div>
       </div>
     </div>
-    <div class="project">
+    <div class="project-home">
       <%=  image_tag("covid-med.jpg", alt: "freelance projects") %>
       <div class="project-text">
         <h2 class="description">Freelance work</h2>
@@ -76,7 +78,7 @@
         </div>
       </div>
     </div>
-    <div class="project">
+    <div class="project-home">
       <%=  image_tag("covid-med.jpg", alt: "30 days of websites projects") %>
       <div class="project-text">
         <h2 class="description">30 days of websites</h2>
@@ -87,7 +89,7 @@
         </div>
       </div>
     </div>
-    <div class="project">
+    <div class="project-home">
       <%=  image_tag("covid-sm.jpg", alt: "design strategy projects") %>
       <div class="project-text">
         <h2 class="description">Design Strategy</h2>

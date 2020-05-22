@@ -20,3 +20,18 @@
     }
   }
 }
+
+@media only screen and (max-width:800px) {
+  .project {
+    display: block !important;
+    div {
+      width: 100% !important;
+    }
+    .text {
+      padding: 30px !important;
+    }
+    .header {
+      height: 100vw !important;
+    }
+  }
+}
