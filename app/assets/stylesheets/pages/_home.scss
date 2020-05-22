@@ -41,6 +41,24 @@
     line-height: 40px;
     margin: 12px 0 14px 0;
   }
+  .profile-img {
+    position: relative;
+    width: 187px;
+    margin: 0 auto;
+  }
+  i {
+    position: absolute;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border-radius: 50%;
+    background: #D9BAF1;
+    border: 3.5px solid #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(138, 138, 138, 0.25);
+    top: 0;
+    right: 15px;
+    z-index: 1;
+  }
 }
 
 .images {
