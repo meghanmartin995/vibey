@@ -1,6 +1,25 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  height: 100%;
+  --bg: #fcfcfc;
+  --outline: #fff;
+  --button: #D9BAF1;
+  --color-text: #0D152E;
+  --photo-text: #251E1E;
+  --check: #fff;
+  --gradient: linear-gradient(180deg, rgba(34, 13, 13, 0) 0%, rgba(71, 71, 71, 0) 0.01%, rgba(40, 19, 12, 0) 100%);
+
+}
+
+html[data-theme='dark'] {
+    --bg: #262429;
+    // --bg-panel: #434343;
+    --outline: #262429;
+    --color-text: #ffffff;
+    --photo-text: #ffffff;
+    --check: #525056;
+    --gradient: linear-gradient(180deg, rgba(34, 13, 13, 0.5) 0%, rgba(71, 71, 71, 0.5) 0.01%, rgba(40, 19, 12, 0.435) 100%);
 }
 
 *, *:before, *:after {
@@ -28,7 +47,7 @@ ol, ul {
 
 a {
   text-decoration: none;
-  color: $black !important;
+  color: var(--color-text) !important;
 }
 
 a:hover {
@@ -41,8 +60,8 @@ img {
 }
 
 body {
-  background-color: white !important;
-  color: $black;
+  background-color: var(--bg) !important;
+  color: var(--color-text);
 }
 
 button::-moz-focus-inner,
