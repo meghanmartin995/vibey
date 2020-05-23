@@ -48,6 +48,7 @@
   }
   i {
     position: absolute;
+    cursor: pointer;
     color: white;
     padding: 13px;
     font-size: 16px;
@@ -56,8 +57,27 @@
     border: 3.5px solid #FFFFFF;
     box-shadow: 4px 4px 10px rgba(138, 138, 138, 0.25);
     top: 0;
-    right: 15px;
+    right: 11px;
     z-index: 1;
+  }
+}
+
+.buttons {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 24px;
+  .following {
+    margin-right: 22px;
+  }
+  p {
+    color: #46335E;
+    padding: 7px 40px;
+    font-size: 19px;
+    font-family: Avenir;
+    font-weight: 500;
+    background: #F3E8FF;
+    cursor: pointer;
   }
 }
 
