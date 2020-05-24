@@ -19,7 +19,21 @@
       font-size: 18px !important;
     }
   }
+  .buttons {
+    p {
+    padding: 7px 34px !important;
+    font-size: 17px !important;
+    margin: 0 6px !important;
+    }
+  }
 }
+
+@media only screen and (max-width:330px) {
+  .buttons p {
+    font-size: 15px !important;
+  }
+}
+
 
 @media only screen and (max-width:800px) {
   .project {

@@ -68,11 +68,13 @@
   justify-content: center;
   margin-top: 24px;
   .following {
-    margin-right: 22px;
+    // margin-right: 22px;
+    cursor: default;
   }
   p {
     color: #46335E;
     padding: 7px 40px;
+    margin: 0 11px;
     font-size: 19px;
     font-family: Avenir;
     font-weight: 500;
