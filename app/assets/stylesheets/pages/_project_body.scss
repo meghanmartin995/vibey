@@ -1,0 +1,52 @@
+.project-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 38px 100px;
+  grid-gap: 62px;
+  h2 {
+    width: 450px;
+    font-family: Proxima Nova Bold;
+    font-size: 36px;
+    line-height: 120%;
+  }
+  p.summary-text {
+    width: 450px;
+    font-family: Avenir;
+    font-size: 21px;
+    line-height: 145%;
+    padding-top: 6px;
+  }
+  h3 {
+    font-family: Proxima Nova Bold;
+    font-size: 22px;
+  }
+  .project-role {
+    p {
+      font-family: Proxima Nova;
+      font-size: 19px;
+      line-height: 140%;
+      width: 500px;
+    }
+    span {
+      text-decoration: underline;
+    }
+    .team {
+      color: #4A4848;
+      padding-top: 6px;
+    }
+    .role {
+      margin-top: 18px;
+    }
+  }
+}
+
+.final-design {
+  text-align: center;
+  padding: 30px 0;
+  p {
+    font-family: Avenir;
+    font-style: italic;
+    font-size: 21px;
+    margin-top: 20px;
+  }
+}
