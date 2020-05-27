@@ -1,7 +1,7 @@
 .project-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 34px 80px;
+  padding: 34px 0 30px 0;
   grid-gap: 150px;
   .summary {
     justify-self: right;
@@ -65,6 +65,9 @@
     text-align: center;
     justify-self: center;
     grid-gap: 40px;
+    h2 {
+      font-size: 35px;
+    }
   }
   .project-role {
     margin: 0 auto;
@@ -110,7 +113,7 @@
 
 .final-design {
   text-align: center;
-  padding: 30px 0;
+  padding: 26px 0;
   p {
     font-family: Avenir;
     font-style: italic;

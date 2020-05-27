@@ -111,7 +111,6 @@
     height: 100%;
     width: 100%;
     cursor: pointer;
-    font-family: Proxima Nova;
     position: relative;
     img {
       height: 100%;
@@ -141,7 +140,7 @@
       h2 {
         font-weight: bold;
         font-size: 30px;
-        font-family: Proxima Nova;
+        font-family: Proxima Nova Bold;
       }
       p {
         font-size: 18px;
@@ -157,6 +156,9 @@
         margin-top: 12px;
         font-family: Avenir;
         font-weight: 300;
+        a {
+          color: white !important;
+        }
         h3 {
           font-size: 21px;
         }
