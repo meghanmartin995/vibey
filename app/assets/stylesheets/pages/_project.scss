@@ -1,27 +1,108 @@
 .project-header {
-  height: 400px;
-  background: gray;
+  background: #BAD2F8;
+  grid-template-columns: 1fr 1fr;
+  padding: 72px 0 14px 0;
+  grid-template-areas:
+    "image image1"
+    ". description";
+  display: grid;
+  .covid-img {
+    grid-area: image;
+    justify-self: right;
+  }
+  .covid-M {
+    grid-area: image1;
+    justify-self: left;
+  }
+  .details {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 16px;
+    grid-area: description;
+    justify-self: left;
+    padding-left: 250px;
+    letter-spacing: 0.04em;
+    color: #4A4A4A;
+    font-family: Proxima Nova Bold;
+  }
 }
 
-.project {
-  display: flex;
-  div {
-    width: 50%;
-  }
-  .header {
-    height: 100vh;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    background-image: asset-url('covid-med.jpg');
-    background-size: cover;
-    background-position: center;
+@media only screen and (max-width:1200px) {
+  .project-header {
+    padding: 72px 20px 14px 20px !important;
+    .details {
+      padding-left: 140px !important;
+    }
+    .covid-M {
+      padding-top: 16px;
+      width: 548px;
+    }
+    .covid-img {
+      width: 460px;
+    }
   }
 }
- .project:nth-child(even) {
-  flex-direction: row-reverse;
- }
 
-.text {
-  padding: 60px;
+@media only screen and (max-width:980px) {
+  .project-header {
+    grid-template-columns: 1fr !important;
+    padding: 60px 0 24px 0 !important;
+    grid-gap: 40px 0;
+    grid-template-areas:
+      "image1"
+      "image"
+      "description";
+  .details {
+    width: 100%;
+    padding-left: 0 !important;
+  }
+  .covid-img {
+    width: 400px;
+    justify-self: center;
+  }
+  .covid-M {
+    width: 485px;
+    justify-self: center;
+  }
 }
+}
+
+@media only screen and (max-width:600px) {
+  .covid-img {
+    width: 290px !important;
+  }
+  .covid-M {
+    width: 358px !important;
+  }
+
+  .details {
+    font-size: 18px !important;
+  }
+}
+
+
+
+
+
+// .project {
+//   display: flex;
+//   div {
+//     width: 50%;
+//   }
+//   .header {
+//     height: 100vh;
+//     position: sticky;
+//     position: -webkit-sticky;
+//     top: 0;
+//     background-image: asset-url('covid-med.jpg');
+//     background-size: cover;
+//     background-position: center;
+//   }
+// }
+//  .project:nth-child(even) {
+//   flex-direction: row-reverse;
+//  }
+
+// .text {
+//   padding: 60px;
+// }

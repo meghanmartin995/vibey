@@ -22,5 +22,22 @@ $body-medium: "Benton Sans Medium";
        font-url('BentonSans-Medium.ttf') format('truetype')
 }
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: font-url('ProximaNova-Regular.eot');
+  src: font-url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+       font-url('ProximaNova-Regular.woff') format('woff'),
+       font-url('ProximaNova-Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: font-url('ProximaNova-Bold.eot');
+  src: font-url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+       font-url('ProximaNova-Bold.woff') format('woff'),
+       font-url('ProximaNova-Bold.ttf') format('truetype')
+}
+
+
 
 // $my-font: "Benton Sans";
