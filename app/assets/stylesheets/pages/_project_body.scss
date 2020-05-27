@@ -1,8 +1,11 @@
 .project-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 38px 100px;
-  grid-gap: 62px;
+  padding: 34px 80px;
+  grid-gap: 150px;
+  .summary {
+    justify-self: right;
+  }
   h2 {
     width: 450px;
     font-family: Proxima Nova Bold;
@@ -13,7 +16,7 @@
     width: 450px;
     font-family: Avenir;
     font-size: 21px;
-    line-height: 145%;
+    line-height: 148%;
     padding-top: 6px;
   }
   h3 {
@@ -27,8 +30,9 @@
       line-height: 140%;
       width: 500px;
     }
-    span {
+    a {
       text-decoration: underline;
+      color: black;
     }
     .team {
       color: #4A4848;
@@ -37,6 +41,70 @@
     .role {
       margin-top: 18px;
     }
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .project-content {
+    grid-gap: 20px;
+    padding: 34px 38px;
+    p.summary-text {
+      width: 398px;
+    }
+
+    .project-role p {
+      width: 440px;
+    }
+  }
+}
+
+@media only screen and (max-width:1000px) {
+  .project-content {
+    grid-template-columns: 1fr;
+    padding: 34px 0 !important;
+    text-align: center;
+    justify-self: center;
+    grid-gap: 40px;
+  }
+  .project-role {
+    margin: 0 auto;
+    p {
+      width: 447px !important;
+    }
+  }
+  .summary {
+    margin: 0 auto;
+    p.summary-text {
+      width: 447px !important;
+    }
+  }
+}
+
+@media only screen and (max-width:600px) {
+  .project-content h2 {
+    width: 340px !important;
+    font-size: 34px;
+  }
+  .project-role {
+    margin: 0 auto;
+    .role {
+      margin-top: 22px;
+    }
+    p {
+      width: 340px !important;
+    }
+  }
+  .summary {
+    margin: 0 auto;
+    p.summary-text {
+      width: 320px !important;
+    }
+    h3 {
+      width: 320px !important;
+    }
+  }
+  .final-design {
+    padding: 18px 6px !important;
   }
 }
 
