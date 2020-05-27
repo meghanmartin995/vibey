@@ -54,17 +54,21 @@
       </div>
     </div>
     <% end %>
-    <div class="project-home">
-      <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
-      <div class="project-text">
-        <h2 class="description">Fancier</h2>
-        <p class="description">Designed a social marketplace for festival shopping</p>
-        <div class="description like">
-          <a class="heart"><i class="far fa-heart"></i></a>
-          <h3>0</h3>
+    <%= link_to fancier_path do %>
+      <div class="project-home">
+        <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
+        <div class="project-text">
+          <h2 class="description">Fancier</h2>
+          <p class="description">Designed a social marketplace for festival shopping</p>
+          <div class="description like">
+            <object type="owo/uwu">
+              <a style="width: 100%;" class="heart"><i class="far fa-heart"></i></a>
+            </object>
+            <h3>0</h3>
+          </div>
         </div>
       </div>
-    </div>
+    <% end %>
     <div class="project-home">
       <%=  image_tag("covid-med.jpg", alt: "cuzu project") %>
       <div class="project-text">

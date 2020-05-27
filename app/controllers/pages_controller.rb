@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def covid
   end
+
+  def fancier
+
+  end
 end

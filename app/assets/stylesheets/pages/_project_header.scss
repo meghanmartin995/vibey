@@ -7,11 +7,11 @@
     "image image1"
     ". description";
   display: grid;
-  .covid-img {
+  .img1 {
     grid-area: image;
     justify-self: right;
   }
-  .covid-M {
+  .img2 {
     grid-area: image1;
     justify-self: left;
   }
@@ -26,6 +26,20 @@
     color: #4A4A4A;
     font-family: Proxima Nova Bold;
   }
+}
+
+.fancier {
+  background: #E8E1F6;
+}
+
+.fancier-M {
+  min-width: 490px;
+  padding-top: 28px;
+}
+
+.fancier-img {
+  padding-right: 40px;
+  min-width: 400px;
 }
 
 @media only screen and (max-width:1200px) {
@@ -57,13 +71,17 @@
     width: 100%;
     padding-left: 0 !important;
   }
+  .justify {
+    justify-self: center;
+  }
   .covid-img {
     width: 400px;
-    justify-self: center;
   }
   .covid-M {
     width: 485px;
-    justify-self: center;
+  }
+  .fancier-M {
+    min-width: 477px;
   }
 }
 }
@@ -77,5 +95,12 @@
   }
   .details {
     font-size: 18px !important;
+  }
+  .fancier-M {
+    min-width: 320px !important;
+  }
+  .fancier-img {
+    min-width: 320px !important;
+    padding-right: 0;
   }
 }
