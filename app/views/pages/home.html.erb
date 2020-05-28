@@ -8,6 +8,27 @@
   </ul>
 </header>
 
+<!-- <div id="lightgallery">
+  <a data-src="img/img1.jpg">
+      <img src="img/thumb1.jpg" />
+  </a>
+  <a data-src="img/img2.jpg">
+      <img src="img/thumb2.jpg" />
+  </a>
+  ...
+</div> -->
+<div id="lightgallery">
+  <%= link_to image_path("covid.png"), data: { src: "covid.png" }, class: "" do %>
+    <%= image_tag("covid.png") %>
+  <% end %>
+    <%= link_to image_path("fancier.png"), data: { src: "covid.png" }, class: "" do %>
+    <%= image_tag("fancier.png") %>
+  <% end %>
+    <%= link_to image_path("fancier.png"), data: { src: "covid.png" }, class: "" do %>
+    <%= image_tag("fancier.png") %>
+  <% end %>
+</div>
+
 <section class="bio">
   <div class="profile-img">
     <%=  image_tag("profile.png", alt: "photo of me") %>
