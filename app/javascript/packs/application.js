@@ -32,22 +32,20 @@ import 'lightgallery'
 // import { initSelect2 } from '../components/init_select2';
 import { toggle } from '../packs/toggle'
 import { like } from '../packs/like'
-import { home } from '../packs/home.js.erb'
+import { home } from '../packs/home'
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
    $("#lightgallery").lightGallery( {
         mode: 'lg-slide',
-      cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)',
-      counter: false
+        cssEasing : 'cubic-bezier(0.25, 0, 0.25, 1)',
+        counter: false
    });
 
    //remove before production
-  $lg.on('onBeforeClose.lg',function(event, index, fromTouch, fromThumb){
-      try{$lg.data('lightGallery').destroy(true);}catch(ex){};
-  });
-
-
+  // $lg.on('onBeforeClose.lg',function(event, index, fromTouch, fromThumb){
+  //     try{$lg.data('lightGallery').destroy(true);}catch(ex){};
+  // });
 });
 
