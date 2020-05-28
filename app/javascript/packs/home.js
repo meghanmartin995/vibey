@@ -6,14 +6,11 @@ function home() {
     pager: true,
     counter: false,
     dynamicEl: [{
-        "src": `https://source.unsplash.com/random`,
-        'thumb': 'https://source.unsplash.com/random'
+        "src": `https://source.unsplash.com/random`
     }, {
-        'src': 'https://source.unsplash.com/random',
-        'thumb': 'https://source.unsplash.com/random'
+        'src': 'https://source.unsplash.com/random'
     }, {
-        'src': 'https://source.unsplash.com/random',
-        'thumb': 'https://source.unsplash.com/random'
+        'src': 'https://source.unsplash.com/random'
     }]
   })
 }
