@@ -60,8 +60,9 @@ img {
 }
 
 body {
-  background-color: var(--bg) !important;
-  color: var(--color-text);
+  background: #fff !important;
+  // background-color: var(--bg) !important;
+  // color: var(--color-text);
 }
 
 button::-moz-focus-inner,

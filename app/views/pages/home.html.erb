@@ -7,59 +7,44 @@
     <li> <a target=”_blank” href="https://dribbble.com/ziganka"><i aria-label="dribbble" class="fab fa-dribbble"></i></a> </li>
   </ul>
 </header>
-<h1 class="animate__animated animate__bounce">An animated element</h1>
-<section class="bio">
-  <div class="profile-img">
-    <%=  image_tag("profile.png", alt: "photo of me", id: "dynamic") %>
-    <a data-toggle="collapse" href="#collapseExample"><i  class="fas fa-plus"></i></a>
-  </div>
-  <h1>Meghan Martin</h1>
-  <p>Product designer and creative developer. UC Berkeley grad. <br> MA Design Strategy. I make great things on the internet.</p>
-  <p class="collapse extended" id="collapseExample">extended descriptionextended extended descriptionextended descriptionextended descriptiondescriptionextended descriptionextended descriptionextended descriptionextended descriptionextended description</p>
-</section>
+  <section class="bio">
+    <div class="profile-img">
+      <%=  image_tag("profile.png", alt: "photo of me", id: "dynamic", class: "animate__animated") %>
+      <a data-toggle="collapse" href="#collapseExample" class="animate__animated"><i  class="fas fa-plus animate__animated"></i></a>
+    </div>
+    <h1 class="animate__animated">Meghan Martin</h1>
+    <p class="animate__animated">Product designer and creative developer. UC Berkeley grad. <br> MA Design Strategy. I make great things on the internet.</p>
+    <p class="collapse extended" id="collapseExample">extended descriptionextended extended descriptionextended descriptionextended descriptiondescriptionextended descriptionextended descriptionextended descriptionextended descriptionextended description</p>
+  </section>
 
-  <div class="collapse buttons" id="collapseExample">
-    <p class="following">following</p>
-    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=meghanxmartin@gmail.com" target="_blank"><p>send message</p></a>
-  </div>
 
-  <div class="images">
-    <div class="image">
-      <%=  image_tag("", alt: "ui work", class: "dynamic")%>
-      <p>ui work</p>
+    <div class="collapse buttons" id="collapseExample">
+      <p class="following">following</p>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=meghanxmartin@gmail.com" target="_blank"><p>send message</p></a>
     </div>
-    <div class="image">
-      <%=  image_tag("", alt: "dev work") %>
-      <p>dev work</p>
-    </div>
-    <div class="image">
-      <%=  image_tag("", alt: "dev work") %>
-      <p>my life</p>
-    </div>
-  </div>
-<div class="content-container">
-  <section class="image-grid">
-    <%= link_to covid_path do %>
-    <div class="project-home">
-      <%=  image_tag("covid-med.jpg", alt: "covid project") %>
-      <div class="project-text">
-        <h2 class="description">Covid Science Engine</h2>
-        <p class="description">Designed an application for COVID-19 researchers</p>
-        <div class="description like">
-          <object type="owo/uwu">
-            <a style="width: 100%;" class="heart"><i class="far fa-heart"></i></a>
-          </object>
-          <h3>0</h3>
-        </div>
+
+    <div class="images">
+      <div class="image">
+        <%=  image_tag("", alt: "ui work", class: "dynamic")%>
+        <p>ui work</p>
+      </div>
+      <div class="image">
+        <%=  image_tag("", alt: "dev work") %>
+        <p>dev work</p>
+      </div>
+      <div class="image">
+        <%=  image_tag("", alt: "dev work") %>
+        <p>my life</p>
       </div>
     </div>
-    <% end %>
-    <%= link_to fancier_path do %>
+  <div class="content-container">
+    <section class="image-grid">
+      <%= link_to covid_path do %>
       <div class="project-home">
-        <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
+        <%=  image_tag("covid-med.jpg", alt: "covid project") %>
         <div class="project-text">
-          <h2 class="description">Fancier</h2>
-          <p class="description">Designed a social marketplace for festival shopping</p>
+          <h2 class="description">Covid Science Engine</h2>
+          <p class="description">Designed an application for COVID-19 researchers</p>
           <div class="description like">
             <object type="owo/uwu">
               <a style="width: 100%;" class="heart"><i class="far fa-heart"></i></a>
@@ -68,61 +53,77 @@
           </div>
         </div>
       </div>
-    <% end %>
-    <div class="project-home">
-      <%=  image_tag("covid-med.jpg", alt: "cuzu project") %>
-      <div class="project-text">
-        <h2 class="description">Cuzu</h2>
-        <p class="description">Designed a productivity application for learning <br>how to code</p>
-        <div class="description like">
-          <a class="heart"><i class="far fa-heart"></i></a>
-          <h3>0</h3>
+      <% end %>
+      <%= link_to fancier_path do %>
+        <div class="project-home">
+          <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
+          <div class="project-text">
+            <h2 class="description">Fancier</h2>
+            <p class="description">Designed a social marketplace for festival shopping</p>
+            <div class="description like">
+              <object type="owo/uwu">
+                <a style="width: 100%;" class="heart"><i class="far fa-heart"></i></a>
+              </object>
+              <h3>0</h3>
+            </div>
+          </div>
+        </div>
+      <% end %>
+      <div class="project-home">
+        <%=  image_tag("covid-med.jpg", alt: "cuzu project") %>
+        <div class="project-text">
+          <h2 class="description">Cuzu</h2>
+          <p class="description">Designed a productivity application for learning <br>how to code</p>
+          <div class="description like">
+            <a class="heart"><i class="far fa-heart"></i></a>
+            <h3>0</h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-home">
-      <%=  image_tag("covid-med.jpg", alt: "freelance projects") %>
-      <div class="project-text">
-        <h2 class="description">Freelance work</h2>
-        <p class="description">Redesigned an outdated ecommerce website</p>
-        <div class="description like">
-          <a class="heart"><i class="far fa-heart"></i></a>
-          <h3>0</h3>
+      <div class="project-home">
+        <%=  image_tag("covid-med.jpg", alt: "freelance projects") %>
+        <div class="project-text">
+          <h2 class="description">Freelance work</h2>
+          <p class="description">Redesigned an outdated ecommerce website</p>
+          <div class="description like">
+            <a class="heart"><i class="far fa-heart"></i></a>
+            <h3>0</h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-home">
-      <%=  image_tag("covid-med.jpg", alt: "30 days of websites projects") %>
-      <div class="project-text">
-        <h2 class="description">30 days of websites</h2>
-        <p class="description">Designed 30 experimental websites in 30 days</p>
-        <div class="description like">
-          <a class="heart"><i class="far fa-heart"></i></a>
-          <h3>0</h3>
+      <div class="project-home">
+        <%=  image_tag("covid-med.jpg", alt: "30 days of websites projects") %>
+        <div class="project-text">
+          <h2 class="description">30 days of websites</h2>
+          <p class="description">Designed 30 experimental websites in 30 days</p>
+          <div class="description like">
+            <a class="heart"><i class="far fa-heart"></i></a>
+            <h3>0</h3>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="project-home">
-      <%=  image_tag("covid-sm.jpg", alt: "design strategy projects") %>
-      <div class="project-text">
-        <h2 class="description">Design Strategy</h2>
-        <p class="description">Designed a manual to upcycle plastic in the Amazon</p>
-        <div class="description like">
-          <a class="heart"><i class="far fa-heart"></i></a>
-          <h3>0</h3>
+      <div class="project-home">
+        <%=  image_tag("covid-sm.jpg", alt: "design strategy projects") %>
+        <div class="project-text">
+          <h2 class="description">Design Strategy</h2>
+          <p class="description">Designed a manual to upcycle plastic in the Amazon</p>
+          <div class="description like">
+            <a class="heart"><i class="far fa-heart"></i></a>
+            <h3>0</h3>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>follow me on <a target=”_blank” href="https://twitter.com/meghanxmartin">twitter</a> for hot takes</p>
-    <p>download my <a href="">resume</a></p>
-    <p>meghanxmartin@gmail.com</p>
-    <div class="toggle-container">
-      <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
-    </div>
-  </footer>
-</div>
+    <footer>
+      <p>follow me on <a target=”_blank” href="https://twitter.com/meghanxmartin">twitter</a> for hot takes</p>
+      <p>download my <a href="">resume</a></p>
+      <p>meghanxmartin@gmail.com</p>
+      <div class="toggle-container">
+        <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>
+      </div>
+    </footer>
+  </div>
 
 <%= javascript_pack_tag 'home' %>
+<%= javascript_pack_tag 'toggle' %>

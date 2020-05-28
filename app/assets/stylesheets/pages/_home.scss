@@ -2,8 +2,13 @@
   padding: 0 16px;
 }
 
+.home {
+  background: var(--bg) !important;
+}
+
 .home-header {
   background: var(--gradient), asset-url('bg.jpg');
+  z-index: 1;
   height: 220px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -18,10 +23,12 @@
       i {
         color: white;
         font-size: 32px;
-        transition: opacity .8s;
+        transition: all .8s;
       }
       i:hover {
-        opacity: .8;
+        // opacity: .9;
+        animation: pulse;
+        animation-duration: 1s;
       }
     }
   }
@@ -59,6 +66,7 @@
     top: 0;
     right: 11px;
     z-index: 1;
+    display: inline-block;
   }
 }
 
@@ -198,9 +206,12 @@ footer {
   a {
     text-decoration: underline;
     transition: all .8s;
+    display: inline-block;
   }
   a:hover {
     opacity: .7;
     color: var(--color-text);
+    animation: pulse;
+    animation-duration: 1s;
   }
 }
