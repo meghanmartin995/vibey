@@ -4089,27 +4089,6 @@ lg-pager@^1.0.2:
   dependencies:
     jquery ">=1.7.0"
 
-lg-share@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/lg-share/-/lg-share-1.2.0.tgz#b8ebbea2c5b710a20b39d6699be8d2a114e05b92"
-  integrity sha512-MnXlrW+b++ADijxyAfe7688cH+XwSXo4rrPfTcD3uYhYzUg5R5RclfiUjQzWQzSrc2nX0u/VoDIYjd4RZNfCgw==
-  dependencies:
-    jquery ">=1.7.0"
-
-lg-thumbnail@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/lg-thumbnail/-/lg-thumbnail-1.2.0.tgz#8f9b01984f07efb0f7fc4b6373c66d20a4a8bf10"
-  integrity sha512-VyIyYgAwRafRT00vpvbJ0f5HaoZSfNsuFeDlgxOgi6ezV+s0OA1YgdvUAuCkfqmKs70G5L8x49gRazXGbpLAvw==
-  dependencies:
-    jquery ">=1.7.0"
-
-lg-video@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/lg-video/-/lg-video-1.3.0.tgz#2525a0e3b6adae6c7153983e0039e6e1bb5cf03d"
-  integrity sha512-eEhp7oQHrPd2v3VngTCrYQ+EALFFYeiEEBsK2rR3Ykjy225y/2FvtaZWjyfoGiJ07URIVBCr7HBo6u/4o6INzw==
-  dependencies:
-    jquery ">=1.7.0"
-
 lg-zoom@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/lg-zoom/-/lg-zoom-1.2.0.tgz#49a623aeb6f04ce92332fc0cb8cb6d6b0e0c0e28"
