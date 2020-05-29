@@ -5,6 +5,7 @@ function home() {
     dynamic: true,
     pager: true,
     counter: false,
+    loop: false,
     dynamicEl: [{
         "src": `https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706815/Black_Overlay_Fashion_Photo_Instagram_Post_21_umqdx9.png`
     }, {
