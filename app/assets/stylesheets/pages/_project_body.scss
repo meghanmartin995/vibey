@@ -76,6 +76,40 @@
   }
 }
 
+.decisions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 70px auto;
+  max-width: 1100px;
+  grid-gap: 30px;
+  grid-template-areas:
+  "decisions-text . ."
+  "covid1 covid1 finding"
+  "finding2 covid2 covid2 "
+  "covid3 covid3 finding3";
+  .decisions-text {
+    grid-area: decisions-text;
+  }
+  .covid1 {
+    grid-area: covid1;
+  }
+  .covid2 {
+    grid-area: covid2;
+  }
+  .covid3 {
+    grid-area: covid3;
+  }
+  .finding {
+    grid-area: finding;
+  }
+  .finding2 {
+    grid-area: finding2;
+  }
+  .finding3 {
+    grid-area: finding3;
+  }
+}
+
 @media only screen and (max-width:1200px) {
   .project-content {
     grid-gap: 20px;
