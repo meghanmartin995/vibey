@@ -87,6 +87,19 @@
   "covid1 covid1 finding"
   "finding2 covid2 covid2 "
   "covid3 covid3 finding3";
+  h2 {
+    font-family: Proxima Nova Bold;
+    font-weight: bold;
+    font-size: 34px;
+  }
+  .finding {
+    width: 417px;
+    justify-self: center;
+    img {
+      margin-bottom: 14px;
+      margin-left: -24px;
+    }
+  }
   .decisions-text {
     grid-area: decisions-text;
   }
@@ -125,6 +138,9 @@
     grid-gap: 70px 60px;
     padding: 0 42px;
   }
+  .decisions {
+    padding: 0 42px;
+  }
 }
 
 @media only screen and (max-width:1000px) {
@@ -137,6 +153,21 @@
     h2 {
       font-size: 35px;
     }
+  }
+  .decisions {
+    grid-template-columns: 1fr;
+    padding: 24px 0 !important;
+    justify-items: center;
+    grid-gap: 38px;
+    align-content: center;
+    grid-template-areas:
+    "decisions-text"
+    "covid1"
+    "finding"
+    "covid2"
+    "finding2"
+    "covid3"
+    "finding3";
   }
   .project-role {
     margin: 0 auto;
