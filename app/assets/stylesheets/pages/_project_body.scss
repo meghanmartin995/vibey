@@ -140,6 +140,7 @@
   }
   .decisions {
     padding: 0 42px;
+    grid-gap: 70px 60px;
   }
 }
 
@@ -156,9 +157,9 @@
   }
   .decisions {
     grid-template-columns: 1fr;
-    padding: 24px 0 !important;
     justify-items: center;
     grid-gap: 38px;
+    margin: 40px auto;
     align-content: center;
     grid-template-areas:
     "decisions-text"
@@ -194,6 +195,12 @@
     width: 340px !important;
     font-size: 34px;
   }
+  p.summary-text {
+    width: 100%;
+  }
+  .problem p {
+    width: 100%;
+  }
   .project-role {
     margin: 0 auto;
     .role {
@@ -216,6 +223,9 @@
     padding: 18px 6px !important;
   }
 }
+  .finding {
+    width: 300px !important;
+  }
 
 .final-design {
   text-align: center;
