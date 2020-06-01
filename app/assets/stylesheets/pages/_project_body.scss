@@ -47,15 +47,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 70px auto;
-  grid-gap: 100px 102px;
+  grid-gap: 100px 130px;
   max-width: 1100px;
-
   p {
-    width: 417px;
+    width: 440px;
     justify-self: center;
-  }
-  img {
-    justify-self: center;
+    line-height: 155%;
+    font-size: 17px;
   }
   h2{
     font-family: Proxima Nova Bold;
