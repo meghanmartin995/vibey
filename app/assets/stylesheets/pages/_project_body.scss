@@ -43,6 +43,10 @@
     }
   }
 }
+
+.prob span {
+  font-weight: bold;
+}
 .problem {
   display: grid;
   grid-template-columns: 1fr 1fr;
