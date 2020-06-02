@@ -147,6 +147,10 @@
   }
 }
 
+.fancier-final img {
+  opacity: .91;
+}
+
 @media only screen and (max-width:1000px) {
   .project-content {
     grid-template-columns: 1fr;
