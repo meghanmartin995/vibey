@@ -111,6 +111,9 @@
   .image {
     margin: 0 15px;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   p {
     font-family: BentonSans Medium;
