@@ -151,6 +151,13 @@
   opacity: .91;
 }
 
+.f-finding {
+  img {
+    margin-bottom: 14px;
+    margin-left: -24px;
+  }
+}
+
 @media only screen and (max-width:1000px) {
   .project-content {
     grid-template-columns: 1fr;
