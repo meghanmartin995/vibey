@@ -1,6 +1,7 @@
 const checkbox = document.querySelector('input[name=theme]');
 
 const toggle = () => {
+  if (checkbox) {
   checkbox.addEventListener('change', function() {
       if(this.checked) {
           trans()
@@ -10,6 +11,7 @@ const toggle = () => {
           document.documentElement.setAttribute('data-theme', 'light')
       }
   })
+  }
 }
 
 let trans = () => {

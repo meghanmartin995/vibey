@@ -5,14 +5,16 @@ const button = document.querySelector('.heart');
 button.addEventListener('click', like);
 
 function like() {
-  const like = button.innerHTML;
-  // const number = parseInt(counter.innerText)
-  // console.log(number)
-  if(like==whiteHeart) {
-    button.innerHTML = blackHeart;
-    // counter.innerText =+ 1
-  } else {
-    button.innerHTML = whiteHeart;
+  if (button) {
+    const like = button.innerHTML;
+    // const number = parseInt(counter.innerText)
+    // console.log(number)
+    if(like==whiteHeart) {
+      button.innerHTML = blackHeart;
+      // counter.innerText =+ 1
+    } else {
+      button.innerHTML = whiteHeart;
+    }
   }
 }
 
