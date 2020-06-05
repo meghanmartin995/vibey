@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get "freelance", to: 'pages#freelance'
   get "replastic", to: 'pages#replastic'
   get "cuzu", to: 'pages#cuzu'
-  get "30days", to: 'pages#30days'
+  get "thirtydays", to: 'pages#thirtydays'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
