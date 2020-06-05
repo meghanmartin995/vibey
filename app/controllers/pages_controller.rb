@@ -7,6 +7,17 @@ class PagesController < ApplicationController
   end
 
   def fancier
+  end
 
+  def thirtydays
+  end
+
+  def replastic
+  end
+
+  def cuzu
+  end
+
+  def freelance
   end
 end
