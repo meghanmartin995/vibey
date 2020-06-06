@@ -34,6 +34,7 @@ import 'lightgallery'
 import { toggle } from '../packs/toggle'
 // import { like } from '../packs/like'
 import { home } from '../packs/home'
+import { websiteImage } from '../packs/websiteImage'
 // import { flickity } from '../packs/flickity'
 
 document.addEventListener('turbolinks:load', () => {

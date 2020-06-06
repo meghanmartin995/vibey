@@ -1,0 +1,26 @@
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.thirty-body img {
+  position: absolute;
+  top: 500px;
+  left: 400px;
+  // height: 300px;
+  // width: 300px;
+  transform: translate(-50%, -50%) sclae(0.5) rotate(10deg);
+  animation: fadein 0.5s;
+  transition: all 2s;
+}
+
+.thirty-body img:hover {
+  z-index: 1;
+  transition: all 2s;
+}
+
+.website-images {
+  height: 1000px;
+}
+
+
