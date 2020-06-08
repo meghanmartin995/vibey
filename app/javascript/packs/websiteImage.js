@@ -12,6 +12,8 @@ const images = [image1, image2]
 const section = document.querySelector(".website-images")
 const sectionLg = document.querySelector(".thirty-body")
 const header = document.querySelector(".thirty-header")
+const clear = document.querySelector(".clear")
+
 
 let i = 0
 
@@ -32,7 +34,6 @@ function websiteImage(x, y) {
 
   sectionLg.appendChild(img)
   header.appendChild(p)
-  // node.after(img)
   i = i + 1
 
   if (i >= images.length) {
@@ -50,6 +51,13 @@ sectionLg.addEventListener("click", function (event) {
 sectionLg.addEventListener("touchend", function (event) {
   event.preventDefault()
   websiteImage(event.pageX, event.pageY)
+})
+
+const videos = document.querySelectorAll('video')
+console.log(videos)
+
+document.querySelector('.clear').addEventListener('click', () => {
+  document.querySelectorAll('video').forEach(video => video.remove())
 })
 
 export default websiteImage
