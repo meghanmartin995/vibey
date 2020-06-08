@@ -1,10 +1,10 @@
 let image1 = {
-  imageFile: "https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706815/Black_Overlay_Fashion_Photo_Instagram_Post_21_umqdx9.png",
+  imageFile: "https://res.cloudinary.com/dq61mo2kj/video/upload/v1591646820/day_11_final_p78z84.mp4",
   caption: "This is my caption"
 }
 
 let image2 = {
-  imageFile: "https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706815/Black_Overlay_Fashion_Photo_Instagram_Post_21_umqdx9.png",
+  imageFile: "https://res.cloudinary.com/dq61mo2kj/video/upload/v1591646820/day_11_final_p78z84.mp4",
   caption: "This is my caption"
 }
 
@@ -18,11 +18,13 @@ let i = 0
 function websiteImage(x, y) {
   const nextImage = images[i].imageFile
   const caption = images[i].caption
-  const img = document.createElement("img")
+  const img = document.createElement("video")
+  console.log(img)
   const p = document.createElement("p")
   p.innerHTML = caption
 
   img.setAttribute("src", nextImage)
+  img.autoplay = true
   img.style.left = x + "px"
   img.style.top = y + "px"
   img.style.transform = "translate(-50%, -50%) scale(0.5) rotate(" + (Math.random() * 10 - 5) + "deg)"

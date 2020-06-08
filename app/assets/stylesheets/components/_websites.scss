@@ -3,7 +3,7 @@
   100% { opacity: 1; }
 }
 
-.thirty-body img {
+.thirty-body video {
   position: absolute;
   top: 500px;
   left: 400px;
@@ -14,7 +14,7 @@
   transition: all 2s;
 }
 
-.thirty-body img:hover {
+.thirty-body video:hover {
   z-index: 1;
   transition: all 2s;
 }

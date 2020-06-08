@@ -42,6 +42,7 @@
     line-height: 136%;
     margin: 0 auto;
     width: 645px;
+    font-family: Gangster Grotesk;
   }
   h1 {
     font-size: 40px;
@@ -70,21 +71,12 @@
   }
 }
 
-// .lg-backdrop {
-//     opacity: 0.8 !important;
-// }
-// .lg-toolbar {
-//     opacity: 0 !important;
-// }
-
-
 .buttons {
   display: flex;
   text-align: center;
   justify-content: center;
   margin-top: 24px;
   .following {
-    // margin-right: 22px;
     cursor: default;
   }
   p {
@@ -92,7 +84,7 @@
     padding: 7px 40px;
     margin: 0 11px;
     font-size: 19px;
-    font-family: Avenir;
+    font-family: Montserrat;
     font-weight: 500;
     background: #F3E8FF;
     border-radius: 2px;
@@ -116,7 +108,8 @@
     align-items: center;
   }
   p {
-    font-family: BentonSans Medium;
+    font-family: Montserrat;
+    font-weight: 600;
     text-align: center;
     margin-top: 10px;
   }
@@ -178,7 +171,7 @@
       .like {
         display: flex;
         margin-top: 12px;
-        font-family: Avenir;
+        font-family: Montserrat;
         font-weight: 300;
         a {
           color: white !important;
@@ -208,7 +201,7 @@
 
 footer {
   display: grid;
-  font-family: Avenir;
+  font-family: Montserrat;
   color: var(--color-text);
   font-size: 18px;
   max-width: 1870px;
