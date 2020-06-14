@@ -15,7 +15,7 @@ class PagesController < ApplicationController
   def replastic
   end
 
-  def cuzu
+  def fonts
   end
 
   def freelance
