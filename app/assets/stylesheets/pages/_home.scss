@@ -42,12 +42,14 @@
     line-height: 136%;
     margin: 0 auto;
     width: 645px;
-    font-family: Gangster Grotesk;
+    font-family: Benton Sans, sans-serif;
   }
   h1 {
     font-size: 40px;
     line-height: 40px;
     margin: 12px 0 14px 0;
+    font-family: Benton Sans, sans-serif;
+    font-weight: bold;
   }
   .profile-img {
     position: relative;
@@ -171,7 +173,7 @@
         margin-top: 12px;
         font-family: Montserrat;
         font-weight: 300;
-        a {
+        i {
           color: white !important;
         }
         h3 {
