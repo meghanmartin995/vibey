@@ -41,23 +41,29 @@ function websiteImage(x, y) {
   }
 }
 
-sectionLg.addEventListener("click", function (event) {
-  event.preventDefault()
-  websiteImage(event.pageX, event.pageY)
-  console.log(event.pageX)
-  console.log(event.pageY)
-})
+if(document.getElementById('thirty-days')) {
+  sectionLg.addEventListener("click", function (event) {
+    event.preventDefault()
+    websiteImage(event.pageX, event.pageY)
+    console.log(event.pageX)
+    console.log(event.pageY)
+  })
+}
 
-sectionLg.addEventListener("touchend", function (event) {
-  event.preventDefault()
-  websiteImage(event.pageX, event.pageY)
-})
+if(document.getElementById('thirty-days')) {
+  sectionLg.addEventListener("touchend", function (event) {
+    event.preventDefault()
+    websiteImage(event.pageX, event.pageY)
+  })
+}
+
 
 const videos = document.querySelectorAll('video')
-console.log(videos)
 
-document.querySelector('.clear').addEventListener('click', () => {
-  document.querySelectorAll('video').forEach(video => video.remove())
+if(document.getElementById('thirty-days')) {
+  document.querySelector('.clear').addEventListener('click', () => {
+    document.querySelectorAll('video').forEach(video => video.remove())
 })
+}
 
 export default websiteImage

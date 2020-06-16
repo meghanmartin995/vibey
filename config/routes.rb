@@ -6,5 +6,10 @@ Rails.application.routes.draw do
   get "replastic", to: 'pages#replastic'
   get "fonts", to: 'pages#fonts'
   get "thirtydays", to: 'pages#thirtydays'
+  resources :posts do
+    member do
+      put "like" => "posts#like"
+    end
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

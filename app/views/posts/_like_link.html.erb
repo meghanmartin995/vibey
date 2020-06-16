@@ -1,0 +1,3 @@
+<% vote_text = @voter&.voted_for?(post) ? "Unlike" : "Like" %>
+
+<%= button_to vote_text, like_post_path(post), method: :put, remote: :true, class: 'like-post' %>
