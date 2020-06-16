@@ -47,10 +47,9 @@
           <p class="description">Designed an application for COVID-19 researchers</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a style="width: 100%;" class="heart"><i class="far fa-heart"></i></a>
+              <a class="heart"><%= render 'posts/like_link', post: Post.first %></a>
             </object>
             <h3 id="like-count"><%= render 'posts/likes', post: Post.first %></h3>
-            <h3 id="like-link"><%= render 'posts/like_link', post: Post.first %></h3>
           </div>
         </div>
       </div>
@@ -63,10 +62,9 @@
             <p class="description">Designed a social marketplace for festival shopping</p>
             <div class="description like">
               <object type="owo/uwu">
-                <a style="width: 100%;" class="heart"><i class="far fa-heart"></i></a>
+                <a class="heart"><%= render 'posts/like_link', post: Post.second %></a>
               </object>
             <h3 id="like-count"><%= render 'posts/likes', post: Post.second %></h3>
-            <h3 id="like-link"><%= render 'posts/like_link', post: Post.second %></h3>
             </div>
           </div>
         </div>
@@ -79,10 +77,9 @@
           <p class="description">Designed and built a design resource for searching fonts in context</p>
           <div class="description like">
             <object type="owo/uwu">
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.third %></h3>
-            <h3 id="like-link"><%= render 'posts/like_link', post: Post.third %></h3>
+              <a class="heart"><%= render 'posts/like_link', post: Post.third %></a>
             </object>
-            <h3>0</h3>
+            <h3 id="like-count"><%= render 'posts/likes', post: Post.third %></h3>
           </div>
         </div>
       </div>
@@ -95,10 +92,9 @@
           <p class="description">Redesigned an outdated ecommerce website</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><i class="far fa-heart"></i></a>
+              <a class="heart"><%= render 'posts/like_link', post: Post.fourth %></a>
             </object>
             <h3 id="like-count"><%= render 'posts/likes', post: Post.fourth %></h3>
-            <h3 id="like-link"><%= render 'posts/like_link', post: Post.fourth %></h3>
           </div>
         </div>
       </div>
@@ -111,10 +107,9 @@
           <p class="description">Designed 30 experimental websites in 30 days</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><i class="far fa-heart"></i></a>
+              <a class="heart"><%= render 'posts/like_link', post: Post.fifth %></a>
             </object>
             <h3 id="like-count"><%= render 'posts/likes', post: Post.fifth %></h3>
-            <h3 id="like-link"><%= render 'posts/like_link', post: Post.fifth %></h3>
           </div>
         </div>
       </div>
@@ -127,10 +122,9 @@
           <p class="description">Designed a manual to upcycle plastic in the Amazon</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><i class="far fa-heart"></i></a>
+              <a class="heart"><%= render 'posts/like_link', post: Post.last %></a>
             </object>
-            <h3 id="like-count"><%#= render 'posts/likes', post: Post.where(title: "replastic") %></h3>
-            <h3 id="like-link"><%#= render 'posts/like_link', post: Post.where(title: "replastic") %></h3>
+            <h3 id="like-count"><%= render 'posts/likes', post: Post.last %></h3>
           </div>
         </div>
       </div>
