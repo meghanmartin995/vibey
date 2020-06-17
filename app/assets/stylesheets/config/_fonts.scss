@@ -41,6 +41,14 @@ $body-medium: "Benton Sans Medium";
 }
 
 @font-face {
+  font-family: "Proxima Nova Medium";
+  src: font-url('ProximaNova-Medium.eot');
+  src: font-url('ProximaNova-Medium.eot?#iefix') format('embedded-opentype'),
+       font-url('ProximaNova-Medium.woff') format('woff'),
+       font-url('ProximaNova-Medium.ttf') format('truetype')
+}
+
+@font-face {
   font-family: "Proxima Nova Bold";
   src: font-url('ProximaNova-Bold.eot');
   src: font-url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
