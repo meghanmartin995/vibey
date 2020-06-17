@@ -15,6 +15,14 @@ $body-medium: "Benton Sans Medium";
 }
 
 @font-face {
+  font-family: "Benton Sans Bold";
+  src: font-url('BentonSans-Bold.eot');
+  src: font-url('BentonSans-Bold.eot') format('embedded-opentype'),
+       font-url('BentonSans-Bold.eot') format('woff'),
+       font-url('BentonSans-Bold.eot') format('truetype')
+}
+
+@font-face {
   font-family: "Benton Sans Medium";
   src: font-url('BentonSans-Medium.eot');
   src: font-url('BentonSans-Medium.eot?#iefix') format('embedded-opentype'),
