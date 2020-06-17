@@ -202,6 +202,7 @@
 footer {
   display: grid;
   font-family: Montserrat;
+  grid-gap: 7px 0;
   color: var(--color-text);
   font-size: 18px;
   max-width: 1870px;
@@ -209,7 +210,7 @@ footer {
   align-items: center;
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(363px, 1fr));
-  margin: 32px auto;
+  margin: 40px auto;
   max-width: 1500px;
   a {
     text-decoration: underline;
