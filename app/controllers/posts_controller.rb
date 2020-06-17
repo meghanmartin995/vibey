@@ -3,7 +3,6 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     session[:voting_id] = request.remote_ip
     @voter = Session.find_or_create_by(ip: session[:voting_id])
-
     if @voter.voted_for? @post
       @post.unliked_by @voter
     else

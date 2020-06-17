@@ -1,0 +1,1 @@
+$('#favorite-<%= @post.id %>').replaceWith('<%= escape_javascript render 'unfavorite_link', post: @post %>');

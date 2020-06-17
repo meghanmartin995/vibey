@@ -47,9 +47,9 @@
           <p class="description">Designed an application for COVID-19 researchers</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><%= render 'posts/like_link', post: Post.first %></a>
+              <a class="heart" id="link-post-<%= Post.first.id %>"><%= render 'posts/like_link', post: Post.first, voter: @voter %></a>
             </object>
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.first %></h3>
+            <h3 id="post-<%= Post.first.id %>"><%= render 'posts/likes', post: Post.first, voter: @voter %></h3>
           </div>
         </div>
       </div>
@@ -62,9 +62,9 @@
             <p class="description">Designed a social marketplace for festival shopping</p>
             <div class="description like">
               <object type="owo/uwu">
-                <a class="heart"><%= render 'posts/like_link', post: Post.second %></a>
+                <a class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
               </object>
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.second %></h3>
+            <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
             </div>
           </div>
         </div>
@@ -77,9 +77,9 @@
           <p class="description">Designed and built a design resource for searching fonts in context</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><%= render 'posts/like_link', post: Post.third %></a>
+              <a class="heart" id="link-post-<%= Post.third.id %>"><%= render 'posts/like_link', post: Post.third, voter: @voter %></a>
             </object>
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.third %></h3>
+            <h3 id="post-<%= Post.third.id %>"><%= render 'posts/likes', post: Post.third, voter: @voter %></h3>
           </div>
         </div>
       </div>
@@ -92,9 +92,9 @@
           <p class="description">Redesigned an outdated ecommerce website</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><%= render 'posts/like_link', post: Post.fourth %></a>
+              <a class="heart" id="link-post-<%= Post.fourth.id %>"> <%= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
             </object>
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.fourth %></h3>
+            <h3 id="post-<%= Post.fourth.id %>"><%= render 'posts/likes', post: Post.fourth, voter: @voter %></h3>
           </div>
         </div>
       </div>
@@ -107,9 +107,9 @@
           <p class="description">Designed 30 experimental websites in 30 days</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><%= render 'posts/like_link', post: Post.fifth %></a>
+              <a class="heart" id="link-post-<%= Post.fifth.id %>"> <%= render 'posts/like_link', post: Post.fifth, voter: @voter %></a>
             </object>
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.fifth %></h3>
+            <h3 id="post-<%= Post.fifth.id %>"><%= render 'posts/likes', post: Post.fifth, voter: @voter %></h3>
           </div>
         </div>
       </div>
@@ -122,9 +122,9 @@
           <p class="description">Designed a manual to upcycle plastic in the Amazon</p>
           <div class="description like">
             <object type="owo/uwu">
-              <a class="heart"><%= render 'posts/like_link', post: Post.last %></a>
+              <a class="heart" id="link-post-<%= Post.last.id %>"><%= render 'posts/like_link', post: Post.last, voter: @voter %></a>
             </object>
-            <h3 id="like-count"><%= render 'posts/likes', post: Post.last %></h3>
+             <h3 id="post-<%= Post.last.id %>"><%= render 'posts/likes', post: Post.last, voter: @voter %></h3>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     @home_page = true
+    @voter = Session.find_or_create_by(ip: session[:voting_id])
   end
 
   def covid
