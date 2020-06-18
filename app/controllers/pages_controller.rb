@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     @home_page = true
     session[:voting_id] = request.remote_ip
     @voter = Session.find_or_create_by(ip: session[:voting_id])
+    @message = Message.new
   end
 
   def covid

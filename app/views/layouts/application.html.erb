@@ -18,6 +18,11 @@
   </head>
 
   <body class="<%= @home_page ? 'home' : ''%>">
+    <% if flash[:alert] %>
+      <div class="alert">
+         <%= flash[:alert] %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
