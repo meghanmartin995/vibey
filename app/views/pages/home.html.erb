@@ -36,11 +36,12 @@
           <div class="modal-body">
                 <%= simple_form_for(@message) do |f| %>
                   <%= f.input :note, label: false, input_html: { autocomplete: 'off' }, class: ""%>
-
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                <%= f.button :submit, 'Submit' %>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">cancel</button>
+            <span class="submit-btn">
+                <%= f.button :submit, '👼🏼 ~send~👼🏼' %>
+            </span>
                 <% end %>
           </div>
         </div>

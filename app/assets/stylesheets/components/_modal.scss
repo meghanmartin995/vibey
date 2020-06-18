@@ -1,0 +1,99 @@
+.modal-content {
+  font-family: Benton Sans Medium, sans-serif;
+  border: 2.8px solid #5B3852;
+  border-radius: 7px;
+  position: relative;
+  transition: opacity 0.2s;
+  .modal-header {
+    border: none;
+    padding: 2rem 1.8rem .6rem 1.8rem;
+  }
+
+  .close {
+    opacity: 1;
+    color: rgba(13, 21, 46, 1);
+    padding: 1.46rem 1rem;
+  }
+
+  .modal-footer {
+    border: none;
+    padding: .5rem 1.8rem 1rem 1rem;
+    .btn-secondary {
+      border: none;
+      background: none;
+      color: black;
+
+    }
+    .submit-btn {
+      font-size: 18px;
+      border: 1.7px solid rgba(13, 21, 46, 1);
+      border-radius: 5px;
+      position: relative;
+      transition: opacity 0.2s;
+      padding: 0.12rem 0rem;
+    }
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .modal-body {
+    padding: .8rem 1.8rem 0rem 1.8rem;
+  }
+
+  textarea.form-control {
+    height: 120px;
+    background: rgba(233, 233, 233, 0.35);
+    border: 1.5px solid #5B3852;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: rgba(13, 21, 46, 1);
+    padding: 0.65rem 0.75rem;
+  }
+}
+.modal-content:after {
+  background: #E2BAFF;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate(12px, 12px);
+  border: 2.8px solid #5B3852;
+  border-radius: 7px;
+  z-index: -1;
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  transition-property: transform, opacity;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-font-smoothing: antialiased;
+}
+
+// .submit-btn:after {
+//   background: #E2BAFF;
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   transform: translate(12px, 12px);
+//   border: 3px solid #5B3852;
+//   border-radius: 7px;
+//   z-index: -1;
+//   transition-duration: 0.1s;
+//   transition-delay: 0.25s;
+//   transition-property: transform, opacity;
+//   transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+//   -webkit-font-smoothing: antialiased;
+//   pointer-events: none;
+// }
+

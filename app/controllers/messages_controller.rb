@@ -6,7 +6,7 @@ class MessagesController < ApplicationController
       flash[:alert] = 'Message sent!'
     else
       redirect_to root_path
-      flash[:alert] = 'Message not sent :('
+      flash[:alert] = 'Message was empty! Nothing was sent. :('
     end
   end
 

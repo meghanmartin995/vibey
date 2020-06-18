@@ -19,8 +19,11 @@
 
   <body class="<%= @home_page ? 'home' : ''%>">
     <% if flash[:alert] %>
-      <div class="alert">
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
          <%= flash[:alert] %>
+         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
     <% end %>
     <%= yield %>
