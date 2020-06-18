@@ -1,6 +1,6 @@
 <header class="home-header">
   <%= link_to root_path do %>
-    <%=  image_tag("logo.svg", class: "logo") %>
+    <%=  image_tag("logos.svg", class: "logo") %>
   <% end %>
   <ul class="links">
     <li> <a target=”_blank” href="https://www.linkedin.com/in/meghanxmartin/"><i aria-label="linkedin" class="fab fa-linkedin-in"></i></a> </li>
@@ -101,7 +101,7 @@
         <%=  image_tag("covid-med.jpg", alt: "fonts project") %>
         <div class="project-text">
           <h2 class="description">Fonts in the Wild</h2>
-          <p class="description">Designed and built a design resource for searching fonts in context</p>
+          <p class="description">Designed and built a design resource for finding the perfect font</p>
           <div class="description like">
             <object type="owo/uwu">
               <a class="heart" id="link-post-<%= Post.third.id %>"><%= render 'posts/like_link', post: Post.third, voter: @voter %></a>
@@ -113,7 +113,7 @@
     <%# end %>
     <%#= link_to freelance_path do %>
       <div class="project-home">
-        <%=  image_tag("la1.png", alt: "freelance projects") %>
+        <%=  image_tag("LA.jpg", alt: "freelance projects") %>
         <div class="project-text">
           <h2 class="description">Freelance work</h2>
           <p class="description">Redesigned an outdated ecommerce website</p>
@@ -128,7 +128,7 @@
     <%# end %>
     <%#= link_to thirtydays_path do %>
       <div class="project-home">
-        <%=  image_tag("covid-med.jpg", alt: "30 days of websites projects") %>
+        <%=  image_tag("si.jpg", alt: "30 days of websites projects") %>
         <div class="project-text">
           <h2 class="description">30 days of websites</h2>
           <p class="description">Designed 30 experimental websites in 30 days</p>
