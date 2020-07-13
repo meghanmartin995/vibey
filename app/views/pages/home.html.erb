@@ -55,10 +55,6 @@
         <%=  image_tag("instastory.png", alt: "my life story", id: "dynamic")%>
         <p class="dev">my life</p>
       </div>
-<!--       <div class="image">
-        <%#=  image_tag("", alt: "dev work") %>
-        <p>dev work</p>
-      </div> -->
       <div class="image">
         <%=  image_tag("uistory.png", alt: "ui story", id: "dynamic2") %>
         <p>ui + dev work</p>
@@ -67,81 +63,92 @@
   <div class="content-container">
     <section class="image-grid">
       <%= link_to covid_path do %>
-      <div class="project-home">
-        <%=  image_tag("covid-med.jpg", alt: "covid project") %>
-        <div class="project-text">
-          <h2 class="description">Covid Science Engine</h2>
-          <p class="description">Designed an application for COVID-19 researchers</p>
-          <div class="description like">
-            <object type="owo/uwu">
-              <a class="heart" id="link-post-<%= Post.first.id %>"><%= render 'posts/like_link', post: Post.first, voter: @voter %></a>
-            </object>
-            <h3 id="post-<%= Post.first.id %>"><%= render 'posts/likes', post: Post.first, voter: @voter %></h3>
+      <div class="overlay">
+        <div class="project-home">
+          <%=  image_tag("covid-med.jpg", alt: "covid project") %>
+          <div class="project-text">
+            <h2 class="description">Covid Science Engine</h2>
+            <p class="description">Designed an application for COVID-19 researchers</p>
+            <div class="description like">
+              <object type="owo/uwu">
+                <a class="heart" id="link-post-<%= Post.first.id %>"><%= render 'posts/like_link', post: Post.first, voter: @voter %></a>
+              </object>
+              <h3 id="post-<%= Post.first.id %>"><%= render 'posts/likes', post: Post.first, voter: @voter %></h3>
+            </div>
           </div>
         </div>
       </div>
       <% end %>
       <%= link_to fancier_path do %>
-        <div class="project-home">
-          <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
-          <div class="project-text">
-            <h2 class="description">Fancier</h2>
-            <p class="description">Designed a social marketplace for festival shopping</p>
-            <div class="description like">
-              <object type="owo/uwu">
-                <a class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
-              </object>
-            <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
+        <div class="overlay">
+          <div class="project-home">
+            <%=  image_tag("fancier-med.jpg", alt: "fancier project") %>
+            <div class="project-text">
+              <h2 class="description">Fancier</h2>
+              <p class="description">Designed a social marketplace for festival shopping</p>
+              <div class="description like">
+                <object type="owo/uwu">
+                  <a class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
+                </object>
+              <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
+              </div>
             </div>
           </div>
         </div>
       <% end %>
     <%= link_to fonts_path do %>
-      <div class="project-home">
-        <%=  image_tag("fitw11.jpg", alt: "fonts project") %>
-        <div class="project-text">
-          <h2 class="description">Fonts in the Wild</h2>
-          <p class="description">Designed and built a design resource for finding the perfect font</p>
-          <div class="description like">
-            <object type="owo/uwu">
-              <a class="heart" id="link-post-<%= Post.third.id %>"><%= render 'posts/like_link', post: Post.third, voter: @voter %></a>
-            </object>
-            <h3 id="post-<%= Post.third.id %>"><%= render 'posts/likes', post: Post.third, voter: @voter %></h3>
+      <div class="overlay">
+        <div class="project-home">
+          <%=  image_tag("fitw11.jpg", alt: "fonts project") %>
+          <div class="project-text">
+            <h2 class="description">Fonts in the Wild</h2>
+            <p class="description">Designed and built a design resource for finding the perfect font</p>
+            <div class="description like">
+              <object type="owo/uwu">
+                <a class="heart" id="link-post-<%= Post.third.id %>"><%= render 'posts/like_link', post: Post.third, voter: @voter %></a>
+              </object>
+              <h3 id="post-<%= Post.third.id %>"><%= render 'posts/likes', post: Post.third, voter: @voter %></h3>
+            </div>
           </div>
         </div>
       </div>
     <% end %>
     <%= link_to freelance_path do %>
-      <div class="project-home">
-        <%=  image_tag("losarabis1.jpg", alt: "freelance projects") %>
-        <div class="project-text">
-          <h2 class="description">Freelance work</h2>
-          <p class="description">Redesigned an outdated ecommerce website</p>
-          <div class="description like">
-            <object type="owo/uwu">
-              <a class="heart" id="link-post-<%= Post.fourth.id %>"> <%= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
-            </object>
-            <h3 id="post-<%= Post.fourth.id %>"><%= render 'posts/likes', post: Post.fourth, voter: @voter %></h3>
+      <div class="overlay">
+        <div class="project-home">
+          <%=  image_tag("losarabis1.jpg", alt: "freelance projects") %>
+          <div class="project-text">
+            <h2 class="description">Freelance work</h2>
+            <p class="description">Redesigned an outdated ecommerce website</p>
+            <div class="description like">
+              <object type="owo/uwu">
+                <a class="heart" id="link-post-<%= Post.fourth.id %>"> <%= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
+              </object>
+              <h3 id="post-<%= Post.fourth.id %>"><%= render 'posts/likes', post: Post.fourth, voter: @voter %></h3>
+            </div>
           </div>
         </div>
       </div>
     <% end %>
     <%= link_to thirtydays_path do %>
-      <div class="project-home">
-        <%=  image_tag("si.jpg", alt: "30 days of websites projects") %>
-        <div class="project-text">
-          <h2 class="description">30 days of websites</h2>
-          <p class="description">Designed 30 experimental websites in 30 days</p>
-          <div class="description like">
-            <object type="owo/uwu">
-              <a class="heart" id="link-post-<%= Post.fifth.id %>"> <%= render 'posts/like_link', post: Post.fifth, voter: @voter %></a>
-            </object>
-            <h3 id="post-<%= Post.fifth.id %>"><%= render 'posts/likes', post: Post.fifth, voter: @voter %></h3>
+      <div class="overlay">
+        <div class="project-home">
+          <%=  image_tag("si.jpg", alt: "30 days of websites projects") %>
+          <div class="project-text">
+            <h2 class="description">30 days of websites</h2>
+            <p class="description">Designed 30 experimental websites in 30 days</p>
+            <div class="description like">
+              <object type="owo/uwu">
+                <a class="heart" id="link-post-<%= Post.fifth.id %>"> <%= render 'posts/like_link', post: Post.fifth, voter: @voter %></a>
+              </object>
+              <h3 id="post-<%= Post.fifth.id %>"><%= render 'posts/likes', post: Post.fifth, voter: @voter %></h3>
+            </div>
           </div>
         </div>
       </div>
     <% end %>
     <%= link_to replastic_path do %>
+    <div class="overlay">
       <div class="project-home">
         <%=  image_tag("replastic2.jpg", alt: "design strategy projects") %>
         <div class="project-text">
@@ -155,6 +162,7 @@
           </div>
         </div>
       </div>
+    </div>
     <% end %>
     </section>
 

@@ -131,12 +131,17 @@
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   grid-gap: 20px;
   max-width: 1500px;
+  .overlay {
+    background: linear-gradient(180deg, rgba(161, 157, 249, 0.2) 0%, rgba(209, 208, 237, 0.2) 100%);
+    z-index: 1;
+  }
   .project-home {
     height: 100%;
     // background: linear-gradient(180deg, #A19DF9 0%, #D1D0ED 100%);
     width: 100%;
     cursor: pointer;
     position: relative;
+    z-index: -1;
     img {
       height: 100%;
       width: 100%;
@@ -153,7 +158,6 @@
       left: 0;
       right: 0;
       background: rgba(69, 69, 69, 0.72);
-      // background: rgba(255, 255, 255, 0.66);
       color: #fff;
       visibility: hidden;
       display: flex;
@@ -191,9 +195,13 @@
   }
 }
 
-.project-home:hover .project-text {
+.overlay:hover .project-text {
   visibility: visible;
   opacity: 1;
+}
+
+.overlay:hover {
+  background: linear-gradient(180deg, rgba(161, 157, 249, .05) 0%, rgba(209, 208, 237, .05) 100%);
 }
 
 .description {
@@ -201,7 +209,7 @@
   transform: translateY(1em);
 }
 
-.project-home:hover .description{
+.overlay:hover .description{
   transform: translateY(0);
 }
 
