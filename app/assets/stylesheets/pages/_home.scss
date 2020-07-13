@@ -6,16 +6,23 @@
   background: var(--bg) !important;
 }
 
-.home-header {
+.home-head {
   background: var(--gradient), asset-url('bg.jpg');
-  z-index: 1;
-  height: 220px;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: -96px;
+}
+
+.project-head {
+  position: absolute;
+  width: 100%;
+}
+.home-header {
+  z-index: 1;
+  height: 220px;
   display: flex;
   justify-content: space-between;
   padding: 38px 70px;
-  margin-bottom: -96px;
   ul {
     display: flex;
     li {
@@ -26,7 +33,6 @@
         transition: all .8s;
       }
       i:hover {
-        // opacity: .9;
         animation: pulse;
         animation-duration: 1s;
       }
