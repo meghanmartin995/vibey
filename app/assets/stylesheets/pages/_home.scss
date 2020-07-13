@@ -7,7 +7,7 @@
 }
 
 .home-head {
-  background: var(--gradient), asset-url('bg.jpg');
+  background: linear-gradient(180deg, #A19DF9 0%, #D1D0ED 100%);
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: -96px;
@@ -69,7 +69,7 @@
     padding: 13px;
     font-size: 16px;
     border-radius: 50%;
-    background: #D9BAF1;
+    background: #8E88FF;
     border: 3.5px solid #FFFFFF;
     box-shadow: 4px 4px 10px rgba(138, 138, 138, 0.25);
     top: 0;
@@ -88,13 +88,13 @@
     cursor: default;
   }
   p {
-    color: #46335E;
+    color: #242160;
     padding: 7px 40px;
     margin: 0 11px;
     font-size: 19px;
     font-family: Avenir;
     font-weight: 500;
-    background: #F3E8FF;
+    background: #E1DFFF;
     border-radius: 2px;
   }
   a:hover {
@@ -133,6 +133,7 @@
   max-width: 1500px;
   .project-home {
     height: 100%;
+    // background: linear-gradient(180deg, #A19DF9 0%, #D1D0ED 100%);
     width: 100%;
     cursor: pointer;
     position: relative;

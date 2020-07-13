@@ -32,6 +32,7 @@ import 'lightgallery'
 // import { initSelect2 } from '../components/init_select2';
 import { toggle } from '../packs/toggle'
 import { home } from '../packs/home'
+import { home1 } from '../packs/home1'
 import { websiteImage } from '../packs/websiteImage'
 // import { flickity } from '../packs/flickity'
 
