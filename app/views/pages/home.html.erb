@@ -1,4 +1,8 @@
+
 <header class="home-header home-head">
+  <!-- <div class="video"> -->
+    <%#= video_tag(["c1.mp4"], autoplay: true, loop: true, muted: 'muted') %>
+  <!-- </div> -->
   <%= link_to root_path do %>
     <%=  image_tag("logo1.png", class: "logo") %>
   <% end %>
@@ -9,6 +13,7 @@
     <li> <a target=”_blank” href="https://dribbble.com/ziganka"><i aria-label="dribbble" class="fab fa-dribbble"></i></a> </li>
   </ul>
 </header>
+
   <section class="bio">
     <div class="profile-img">
       <%=  image_tag("profile.png", alt: "photo of me", class: "animate__animated") %>
