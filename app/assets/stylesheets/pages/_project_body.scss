@@ -211,6 +211,12 @@
     grid-gap: 38px;
     margin: 40px auto;
   }
+  .content-container {
+    padding: 0 !important;
+  }
+  .logo {
+    margin-top: 0 !important;
+  }
 }
 
 @media only screen and (max-width:600px) {

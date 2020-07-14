@@ -11,7 +11,6 @@
   left: 50%;
   z-index: -3;
   transform: translateX(-50%) translateY(-50%);
-
 }
 
 .home {
@@ -146,6 +145,21 @@
   }
 }
 
+
+@media only screen and (max-width:484px) {
+  .image-grid {
+     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .home-header {
+    .logo {
+      margin-top: 14px !important;
+    }
+  }
+}
+
 .image-grid {
   display: grid;
   margin: 50px auto;
@@ -189,7 +203,7 @@
       flex-direction: column;
       h2 {
         font-weight: bold;
-        font-size: 40px;
+        font-size: 44px;
         font-family: Proxima Nova Bold, sans-serif;
       }
       p {
