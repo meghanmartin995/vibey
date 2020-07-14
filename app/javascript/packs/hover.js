@@ -29,6 +29,10 @@ images.forEach(image => {
 
 }
 
+if (window.innerWidth > 780) {
+
 hover()
+
+}
 
 export default hover
