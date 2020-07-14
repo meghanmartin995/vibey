@@ -34,6 +34,7 @@ import { toggle } from '../packs/toggle'
 import { home } from '../packs/home'
 import { home1 } from '../packs/home1'
 import { websiteImage } from '../packs/websiteImage'
+import { hover } from '../packs/hover'
 // import { flickity } from '../packs/flickity'
 
 document.addEventListener('turbolinks:load', () => {
