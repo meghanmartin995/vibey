@@ -50,6 +50,10 @@ a {
   color: var(--color-text) !important;
 }
 
+form {
+  outline: none;
+}
+
 a:hover {
   text-decoration: none;
 }

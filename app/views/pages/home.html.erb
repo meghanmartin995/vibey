@@ -66,7 +66,7 @@
             </button>
           </div>
           <div class="modal-body2">
-              <p>hi nice to meet you! ✨ i'm meghan, a designer from california who currently lives in madrid, spain. i love to design interfaces, code and learn new technologies. i believe that doing is better than not doing, to always show up imperfectly, keep it simple and keep your ego out of it. i created <a href="https://www.fontsinthewild.com/" target="_blank" style="text-decoration: underline;">fonts in the wild</a> as a design resource for font inspiration because i love experimental typography and design trends.</p>
+              <p>Hi nice to meet you! ✨ I'm meghan, a designer from California who currently lives in Madrid, Spain. I love to design interfaces, code and learn new technologies. I believe that doing is better than not doing, to always show up imperfectly, keep it simple and keep your ego out of it. I created <a href="https://www.fontsinthewild.com/" target="_blank" style="text-decoration: underline;">fonts in the wild</a> as a design resource for font inspiration because I love experimental typography and design trends.</p>
           </div>
           <div class="modal-footer">
           </div>
@@ -86,108 +86,78 @@
     </div>
   <div class="content-container">
     <section class="image-grid">
-      <%= link_to covid_path do %>
-      <div class="overlay">
-        <div class="project-home">
-          <%=  image_tag("covid1.jpg", alt: "covid project") %>
-          <div class="project-text">
-            <h2 class="description">Covid Science Engine</h2>
-            <p class="description">Designed an application for COVID-19 researchers</p>
-            <div class="description like">
-              <object type="owo/uwu">
-                <a class="heart" id="link-post-<%= Post.first.id %>"><%= render 'posts/like_link', post: Post.first, voter: @voter %></a>
-              </object>
-              <h3 id="post-<%= Post.first.id %>"><%= render 'posts/likes', post: Post.first, voter: @voter %></h3>
-            </div>
+
+      <div class="project-home" onclick="location.href='/covid';">
+        <%=  image_tag("covid1.jpg", alt: "covid project") %>
+        <div class="project-text">
+          <h2 class="description">Covid Science Engine</h2>
+          <p class="description">Designed an application for COVID-19 researchers</p>
+          <div class="description like">
+            <a onclick='event.stopPropagation();' class="heart" style="display: block;"id="link-post-<%= Post.first.id %>"><%= render 'posts/like_link', post: Post.first, voter: @voter %></a>
+            <h3 id="post-<%= Post.first.id %>"><%= render 'posts/likes', post: Post.first, voter: @voter %></h3>
           </div>
         </div>
       </div>
-      <% end %>
-      <%= link_to fancier_path do %>
-        <div class="overlay">
-          <div class="project-home">
-            <%=  image_tag("fancier1.jpg", alt: "fancier project") %>
-            <div class="project-text">
-              <h2 class="description">Fancier</h2>
-              <p class="description">Designed a social marketplace for festival shopping</p>
-              <div class="description like">
-                <object type="owo/uwu">
-                  <a class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
-                </object>
-              <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
-              </div>
+
+        <div class="project-home" onclick="location.href='/fancier';">
+          <%=  image_tag("fancier1.jpg", alt: "fancier project") %>
+          <div class="project-text">
+            <h2 class="description">Fancier</h2>
+            <p class="description">Designed a social marketplace for festival shopping</p>
+            <div class="description like">
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
+            <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
             </div>
           </div>
         </div>
-      <% end %>
-    <%= link_to fonts_path do %>
-      <div class="overlay">
-        <div class="project-home">
+
+        <div class="project-home" onclick="location.href='/fonts';">
           <%=  image_tag("fitw1.jpg", alt: "fonts project") %>
           <div class="project-text">
             <h2 class="description">Fonts in the Wild</h2>
             <p class="description">Designed and built a design resource for finding the perfect font</p>
             <div class="description like">
-              <object type="owo/uwu">
-                <a class="heart" id="link-post-<%= Post.third.id %>"><%= render 'posts/like_link', post: Post.third, voter: @voter %></a>
-              </object>
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.third.id %>"><%= render 'posts/like_link', post: Post.third, voter: @voter %></a>
               <h3 id="post-<%= Post.third.id %>"><%= render 'posts/likes', post: Post.third, voter: @voter %></h3>
             </div>
           </div>
         </div>
-      </div>
-    <% end %>
-    <%= link_to freelance_path do %>
-      <div class="overlay">
-        <div class="project-home">
+
+        <div class="project-home" onclick="location.href='/freelance';">
           <%=  image_tag("la1.jpg", alt: "freelance projects") %>
           <div class="project-text">
             <h2 class="description">Freelance Work</h2>
             <p class="description">Redesigned an outdated ecommerce website</p>
             <div class="description like">
-              <object type="owo/uwu">
-                <a class="heart" id="link-post-<%= Post.fourth.id %>"> <%= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
-              </object>
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.fourth.id %>"> <%= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
               <h3 id="post-<%= Post.fourth.id %>"><%= render 'posts/likes', post: Post.fourth, voter: @voter %></h3>
             </div>
           </div>
         </div>
-      </div>
-    <% end %>
-    <%= link_to thirtydays_path do %>
-      <div class="overlay">
-        <div class="project-home">
+
+        <div class="project-home" onclick="location.href='/thirtydays';">
           <%=  image_tag("30days1.jpg", alt: "30 days of websites projects") %>
           <div class="project-text">
             <h2 class="description">30 Days of Websites</h2>
             <p class="description">Designed 30 experimental websites in 30 days</p>
             <div class="description like">
-              <object type="owo/uwu">
-                <a class="heart" id="link-post-<%= Post.fifth.id %>"> <%= render 'posts/like_link', post: Post.fifth, voter: @voter %></a>
-              </object>
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.fifth.id %>"> <%= render 'posts/like_link', post: Post.fifth, voter: @voter %></a>
               <h3 id="post-<%= Post.fifth.id %>"><%= render 'posts/likes', post: Post.fifth, voter: @voter %></h3>
             </div>
           </div>
         </div>
-      </div>
-    <% end %>
-    <%= link_to replastic_path do %>
-    <div class="overlay">
-      <div class="project-home">
+
+      <div class="project-home"  onclick="location.href='/replastic';">
         <%=  image_tag("replast1.jpg", alt: "design strategy projects") %>
         <div class="project-text">
           <h2 class="description">Design Strategy</h2>
           <p class="description">Designed a manual to upcycle plastic in the Amazon</p>
           <div class="description like">
-            <object type="owo/uwu">
-              <a class="heart" id="link-post-<%= Post.last.id %>"><%= render 'posts/like_link', post: Post.last, voter: @voter %></a>
-            </object>
+              <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.last.id %>"><%= render 'posts/like_link', post: Post.last, voter: @voter %></a>
              <h3 id="post-<%= Post.last.id %>"><%= render 'posts/likes', post: Post.last, voter: @voter %></h3>
           </div>
         </div>
       </div>
-    </div>
-    <% end %>
     </section>
 
     <footer>
