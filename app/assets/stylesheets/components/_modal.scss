@@ -76,7 +76,11 @@
 }
 .modal-body2 {
   padding: 0rem 1.8rem 0rem 1.8rem;
-  font-size: 18px;
+  font-size: 20px;
+  p {
+    font-family: Benton Sans, sans-serif;
+    line-height: 136%;
+  }
 }
 
 // .submit-btn:after {

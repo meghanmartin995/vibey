@@ -67,7 +67,7 @@
   z-index: 3;
   p {
     font-size: 20px;
-    line-height: 136%;
+    line-height: 140%;
     margin: 0 auto;
     width: 645px;
     font-family: Benton Sans, sans-serif;
@@ -115,7 +115,7 @@
     padding: 7px 36px;
     margin: 0 11px;
     font-size: 19px;
-    font-family: Avenir;
+    font-family: Avenir, sans-serif;
     font-weight: 500;
     background: #E1DFFF;
     border-radius: 2px;
@@ -139,7 +139,7 @@
     align-items: center;
   }
   p {
-    font-family: Benton Sans;
+    font-family: Benton Sans, sans-serif;
     font-weight: 600;
     text-align: center;
     margin-top: 10px;
@@ -190,11 +190,11 @@
       h2 {
         font-weight: bold;
         font-size: 40px;
-        font-family: Proxima Nova Bold;
+        font-family: Proxima Nova Bold, sans-serif;
       }
       p {
         max-width: 400px;
-        font-family: Benton Sans;
+        font-family: Benton Sans, sans-serif;
         font-size: 24px;
         font-weight: 500;
       }
@@ -205,7 +205,7 @@
       .like {
         display: flex;
         margin-top: 12px;
-        font-family: Benton Sans;
+        font-family: Benton Sans, sans-serif;
         font-weight: 300;
         i {
           color: white !important;
@@ -239,7 +239,7 @@
 
 footer {
   display: grid;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
   grid-gap: 8px 0;
   color: var(--color-text);
   font-size: 20px;
