@@ -10,4 +10,8 @@
 //= link fitw11.jpg
 //= link losarabis1.jpg
 //= link fancierx.png
+//= link fitw1.jpg
+//= link la1.jpg
+//= link 30days1.jpg
+//= link replast1.jpg
 
