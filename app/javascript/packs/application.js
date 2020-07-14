@@ -35,8 +35,7 @@ import { home } from '../packs/home'
 import { home1 } from '../packs/home1'
 import { websiteImage } from '../packs/websiteImage'
 import { hover } from '../packs/hover'
-// import { links } from '../packs/links'
-// import { flickity } from '../packs/flickity'
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
