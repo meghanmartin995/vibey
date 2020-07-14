@@ -76,7 +76,7 @@
     font-size: 44px;
     line-height: 40px;
     margin: 12px 0 14px 0;
-    font-family: Proxima Nova Medium, sans-serif;
+    font-family: Helvetica Neue, sans-serif;
     font-weight: bold;
   }
   .profile-img {
@@ -92,7 +92,7 @@
     padding: 13px;
     font-size: 16px;
     border-radius: 50%;
-    background: #8E88FF;
+    background: #B1AAFF;
     border: 3.5px solid #FFFFFF;
     box-shadow: 4px 4px 10px rgba(138, 138, 138, 0.25);
     top: 0;
@@ -112,7 +112,7 @@
   }
   p {
     color: #242160;
-    padding: 7px 40px;
+    padding: 7px 36px;
     margin: 0 11px;
     font-size: 19px;
     font-family: Avenir;
@@ -155,7 +155,7 @@
   grid-gap: 20px;
   max-width: 1500px;
   .overlay {
-    background: linear-gradient(180deg, rgba(161, 157, 249, 0.2) 0%, rgba(209, 208, 237, 0.2) 100%);
+    background: linear-gradient(180deg, rgba(161, 157, 249, 0.17) 0%, rgba(209, 208, 237, 0.17) 100%);
     z-index: 1;
   }
   .project-home {
@@ -189,29 +189,29 @@
       flex-direction: column;
       h2 {
         font-weight: bold;
-        font-size: 30px;
+        font-size: 40px;
         font-family: Proxima Nova Bold;
       }
       p {
-        width: 284px;
-        font-family: Avenir;
-        font-size: 20px;
+        max-width: 400px;
+        font-family: Benton Sans;
+        font-size: 24px;
         font-weight: 500;
       }
       i {
-        font-size: 24px;
+        font-size: 25px;
         margin-right: 6px;
       }
       .like {
         display: flex;
         margin-top: 12px;
-        font-family: Montserrat;
+        font-family: Benton Sans;
         font-weight: 300;
         i {
           color: white !important;
         }
         h3 {
-          font-size: 21px;
+          font-size: 23px;
         }
       }
     }
