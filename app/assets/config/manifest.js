@@ -14,4 +14,7 @@
 //= link la1.jpg
 //= link 30days1.jpg
 //= link replast1.jpg
+//= link fitwm.jpg
+//= link fitwmm.jpg
+//= link modal.jpg
 
