@@ -21,9 +21,9 @@ function websiteImage(x, y) {
   const nextImage = images[i].imageFile
   const caption = images[i].caption
   const img = document.createElement("video")
-  console.log(img)
-  const p = document.createElement("p")
-  p.innerHTML = caption
+  // console.log(img)
+  // const p = document.createElement("p")
+  // p.innerHTML = caption
 
   img.setAttribute("src", nextImage)
   img.autoplay = true

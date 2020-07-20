@@ -18,4 +18,5 @@
 //= link fitwmm.jpg
 //= link modal.jpg
 //= link mockupsla.jpg
+//= link 30days.svg
 
