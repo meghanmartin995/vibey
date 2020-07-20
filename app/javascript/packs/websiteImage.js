@@ -48,7 +48,7 @@ let image1 = {
   caption: "This is my caption"
 }
 
-const images = [image1, image2, image3, imagex, image4, image5, image6, image7, image8, image9]
+const images = [image1, image2, imagex, image3, image4, image5, image6, image7, image8, image9]
 const section = document.querySelector(".website-images")
 const sectionLg = document.querySelector(".thirty-body")
 const header = document.querySelector(".thirty-header")
