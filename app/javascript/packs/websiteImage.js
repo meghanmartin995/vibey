@@ -48,7 +48,17 @@ let image1 = {
   caption: "This is my caption"
 }
 
-const images = [image1, image2, imagex, image3, image4, image5, image6, image7, image8, image9]
+let image0 = {
+  imageFile: "https://res.cloudinary.com/dq61mo2kj/video/upload/v1595283250/stayinsidetm_mojh5p.mp4",
+  caption: "This is my caption"
+}
+
+let imagez = {
+  imageFile: "https://res.cloudinary.com/dq61mo2kj/video/upload/v1595283441/figma_api_ibdubr.mp4",
+  caption: "This is my caption"
+}
+
+const images = [image1, image2, imagex, image3, image4, image5, image6, image7, image0, image8, image9, imagez]
 const section = document.querySelector(".website-images")
 const sectionLg = document.querySelector(".thirty-body")
 const header = document.querySelector(".thirty-header")
