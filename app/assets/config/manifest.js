@@ -17,4 +17,5 @@
 //= link fitwm.jpg
 //= link fitwmm.jpg
 //= link modal.jpg
+//= link mockupsla.jpg
 
