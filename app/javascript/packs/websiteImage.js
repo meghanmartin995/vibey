@@ -81,9 +81,6 @@ function websiteImage(x, y) {
   const nextImage = images[i].imageFile
   const caption = images[i].caption
   const img = document.createElement("video")
-  // console.log(img)
-  // const p = document.createElement("p")
-  // p.innerHTML = caption
 
   img.setAttribute("src", nextImage)
   img.autoplay = true
@@ -93,7 +90,6 @@ function websiteImage(x, y) {
 
 
   sectionLg.appendChild(img)
-  // header.appendChild(p)
   i = i + 1
 
   if (i >= images.length) {
@@ -105,8 +101,6 @@ if(document.getElementById('thirty-days')) {
   sectionLg.addEventListener("click", function (event) {
     event.preventDefault()
     websiteImage(event.pageX, event.pageY)
-    console.log(event.pageX)
-    console.log(event.pageY)
   })
 }
 
@@ -119,11 +113,5 @@ if(document.getElementById('thirty-days')) {
 
 
 const videos = document.querySelectorAll('video')
-
-// if(document.getElementById('thirty-days')) {
-//   document.querySelector('.clear').addEventListener('click', () => {
-//     document.querySelectorAll('video').forEach(video => video.remove())
-// })
-// }
 
 export default websiteImage
