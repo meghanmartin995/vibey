@@ -1,6 +1,8 @@
+
 const dynamic = document.querySelector("#dynamic")
 
 if (dynamic) {
+
   $('#dynamic').on('click', home)
 }
 
