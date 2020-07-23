@@ -19,4 +19,9 @@
 //= link modal.jpg
 //= link mockupsla.jpg
 //= link 30days.svg
+//= link fanciermarkss.svg
+//= link losarabis.gif
+//= link covidmarks.svg
+//= link 30marks.svg
+
 
