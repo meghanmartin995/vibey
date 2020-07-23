@@ -23,5 +23,8 @@
 //= link losarabis.gif
 //= link covidmarks.svg
 //= link 30marks.svg
+//= link freelancemarks.svg
+//= link freelancemarks1.svg
+
 
 
