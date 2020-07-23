@@ -26,13 +26,13 @@ function home() {
     }, {
         'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706810/Black_Overlay_Fashion_Photo_Instagram_Post_17_exachq.png'
     }, {
-        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706808/Black_Overlay_Fashion_Photo_Instagram_Post_9_vjudbc.png'
+        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1595524864/Black_Overlay_Fashion_Photo_Instagram_Post_22_ywsord.png'
     }, {
-        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706813/Black_Overlay_Fashion_Photo_Instagram_Post_16_a7emso.png'
+        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1595525064/Black_Overlay_Fashion_Photo_Instagram_Post_23_xj3yni.png'
     }, {
-        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706814/Black_Overlay_Fashion_Photo_Instagram_Post_11_wgeyzb.png'
+        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1595525286/Black_Overlay_Fashion_Photo_Instagram_Post_24_gqxfva.png'
     }, {
-        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706808/Black_Overlay_Fashion_Photo_Instagram_Post_15_gktbkj.png'
+        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1595525383/Black_Overlay_Fashion_Photo_Instagram_Post_25_w1gq6v.png'
     }, {
         'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706816/Black_Overlay_Fashion_Photo_Instagram_Post_14_meaqtq.png'
     }
