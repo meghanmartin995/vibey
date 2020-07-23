@@ -20,7 +20,7 @@ function home() {
     }, {
         'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706808/Black_Overlay_Fashion_Photo_Instagram_Post_3_b0ovst.png'
     }, {
-        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706814/Black_Overlay_Fashion_Photo_Instagram_Post_19_zhz1kq.png'
+        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1595526430/Black_Overlay_Fashion_Photo_Instagram_Post_27_jht7ua.png'
     }, {
         'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1590706807/Black_Overlay_Fashion_Photo_Instagram_Post_6_aajuqj.png'
     }, {
