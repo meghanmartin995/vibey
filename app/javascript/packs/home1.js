@@ -13,7 +13,12 @@ function home1() {
     counter: false,
     download: false,
     loop: false,
-    dynamicEl: [{
+    dynamicEl: [
+    {
+        "src": `https://res.cloudinary.com/dq61mo2kj/image/upload/v1597443806/movinapp_prrit0.jpg`
+    },
+
+    {
         "src": `https://res.cloudinary.com/dq61mo2kj/image/upload/v1594661334/image_processing20200518-1504-r0dtrg-1_v2lygd.png`
     }, {
         'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1594670310/Fancier_Screens_v1-01_uavvpi.png'
