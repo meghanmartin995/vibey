@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "replastic", to: 'pages#replastic'
   get "fonts", to: 'pages#fonts'
   get "thirtydays", to: 'pages#thirtydays'
+  get "univers", to: 'pages#univers'
   resources :messages, only: [ :create ]
   resources :posts do
     member do

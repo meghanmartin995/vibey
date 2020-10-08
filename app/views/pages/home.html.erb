@@ -20,8 +20,8 @@
       <a data-toggle="collapse" href="#collapseExample" class="animate__animated"><i>💭</i></a>
     </div>
     <h1 class="animate__animated">Meghan Martin</h1>
-    <p class="animate__animated resume">Product designer and creative developer. UC Berkeley grad. <br> MA Design Strategy. I make great things on the internet. <br>You can view my <%= link_to 'resume here', asset_path('MeghanResume.pdf'), :target => "_blank"  %>.</p>
-    <p class="collapse extended" id="collapseExample">I'm passionate about the startup scene, technology of the future and creative work the world needs. I'm constantly designing and coding projects & ideas, both freelance and self initiated. I'm currently freelancing but open to full time product design roles. My ideal role would be focused on product design with some front end coding responsibilities as well.</p>
+    <p class="animate__animated resume">Product designer and creative developer. UC Berkeley grad. <br> MA Design Strategy. I make great things on the internet. <br> Below are some personal projects I am most proud of but you can view my product design portfolio <a href="" target="_blank" style="text-decoration: underline;">here</a>. </p>
+    <p class="collapse extended" id="collapseExample">I'm passionate about the startup scene, technology of the future and creative work the world needs. I'm constantly designing and coding projects & ideas, both freelance and self initiated. I'm currently freelancing but open to full time product design roles if the opportunity arises.</p>
   </section>
 
 
@@ -66,7 +66,7 @@
             </button>
           </div>
           <div class="modal-body2">
-              <p>Hi, nice to meet you! ✨ I'm Meghan, a designer from California who currently lives in Madrid, Spain. I love to design interfaces, code and learn new technologies. I believe that doing is better than not doing, to always show up imperfectly, keep it simple and keep your ego out of it. I created <a href="https://www.fontsinthewild.com/" target="_blank" style="text-decoration: underline;">fonts in the wild</a> as a design resource for type inspiration because I love experimental typography and design trends. i document my designing and coding journey on <a href="https://indielog.com/user/meghan" target="_blank" style="text-decoration: underline;">indielog</a> if you'd like to check my out there.</p>
+              <p>Hi, nice to meet you! ✨ I'm Meghan, a designer from California focused on early stage startup UX/UI and visual identity. I love to design interfaces, code and learn new technologies. I believe that doing is better than not doing, to always show up imperfectly, keep it simple and keep your ego out of it. I created <a href="https://www.fontsinthewild.com/" target="_blank" style="text-decoration: underline;">fonts in the wild</a> as a design resource for type inspiration because I love experimental typography and design trends. i document my designing and coding journey on <a href="https://indielog.com/user/meghan" target="_blank" style="text-decoration: underline;">indielog</a> if you'd like to check my out there.</p>
           </div>
           <div class="modal-footer">
           </div>
@@ -87,30 +87,17 @@
   <div class="content-container">
     <section class="image-grid">
 
-      <div class="project-home" onclick="location.href='/covid';">
-        <%=  image_tag("covid1.jpg", alt: "covid project") %>
+<!--       <div class="project-home" onclick="location.href='/covid';">
+        <%#=  image_tag("covid1.jpg", alt: "covid project") %>
         <div class="project-text">
           <h2 class="description">Covid Science Engine</h2>
           <p class="description">Designed an application for COVID-19 researchers</p>
           <div class="description like">
-            <a onclick='event.stopPropagation();' class="heart" style="display: block;"id="link-post-<%= Post.first.id %>"><%= render 'posts/like_link', post: Post.first, voter: @voter %></a>
-            <h3 id="post-<%= Post.first.id %>"><%= render 'posts/likes', post: Post.first, voter: @voter %></h3>
+            <a onclick='event.stopPropagation();' class="heart" style="display: block;"id="link-post-<%#= Post.first.id %>"><%#= render 'posts/like_link', post: Post.first, voter: @voter %></a>
+            <h3 id="post-<%#= Post.first.id %>"><%#= render 'posts/likes', post: Post.first, voter: @voter %></h3>
           </div>
         </div>
-      </div>
-
-        <div class="project-home" onclick="location.href='/fancier';">
-          <%=  image_tag("fancier1.jpg", alt: "fancier project") %>
-          <div class="project-text">
-            <h2 class="description">Fancier</h2>
-            <p class="description">Designed a social marketplace for festival shopping</p>
-            <div class="description like">
-                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
-            <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
-            </div>
-          </div>
-        </div>
-
+      </div> -->
         <div class="project-home" onclick="location.href='/fonts';">
           <%=  image_tag("fitw1.jpg", alt: "fonts project") %>
           <div class="project-text">
@@ -122,24 +109,48 @@
             </div>
           </div>
         </div>
+<!--
+        <div class="project-home" onclick="location.href='/fancier';">
+          <%#=  image_tag("fancier1.jpg", alt: "fancier project") %>
+          <div class="project-text">
+            <h2 class="description">Fancier</h2>
+            <p class="description">Designed a social marketplace for festival shopping</p>
+            <div class="description like">
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%#= Post.second.id %>"><%#= render 'posts/like_link', post: Post.second, voter: @voter %></a>
+            <h3 id="post-<%#= Post.second.id %>"><%#= render 'posts/likes', post: Post.second, voter: @voter %></h3>
+            </div>
+          </div>
+        </div> -->
 
-        <div class="project-home" onclick="location.href='/freelance';">
-          <%=  image_tag("la1.jpg", alt: "freelance projects") %>
+        <div class="project-home" onclick="location.href='/';">
+          <%=  image_tag("univers.svg", alt: "fancier project") %>
+          <div class="project-text">
+            <h2 class="description">Univers</h2>
+            <p class="description">Designed a visual tool to audit a website's accessibility</p>
+            <div class="description like">
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.second.id %>"><%= render 'posts/like_link', post: Post.second, voter: @voter %></a>
+            <h3 id="post-<%= Post.second.id %>"><%= render 'posts/likes', post: Post.second, voter: @voter %></h3>
+            </div>
+          </div>
+        </div>
+
+<!--         <div class="project-home" onclick="location.href='/freelance';">
+          <%#=  image_tag("la1.jpg", alt: "freelance projects") %>
           <div class="project-text">
             <h2 class="description">Freelance Work</h2>
             <p class="description">Redesigned an outdated ecommerce website</p>
             <div class="description like">
-                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.fourth.id %>"> <%= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
-              <h3 id="post-<%= Post.fourth.id %>"><%= render 'posts/likes', post: Post.fourth, voter: @voter %></h3>
+                <a onclick='event.stopPropagation();' class="heart" id="link-post-<%#= Post.fourth.id %>"> <%#= render 'posts/like_link', post: Post.fourth, voter: @voter %></a>
+              <h3 id="post-<%#= Post.fourth.id %>"><%#= render 'posts/likes', post: Post.fourth, voter: @voter %></h3>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <div class="project-home" onclick="location.href='/thirtydays';">
           <%=  image_tag("30days1.jpg", alt: "30 days of websites projects") %>
           <div class="project-text">
             <h2 class="description">30 Days of Websites</h2>
-            <p class="description">Designed 30 experimental websites in 30 days</p>
+            <p class="description">Created 30 experimental websites in 30 days</p>
             <div class="description like">
                 <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.fifth.id %>"> <%= render 'posts/like_link', post: Post.fifth, voter: @voter %></a>
               <h3 id="post-<%= Post.fifth.id %>"><%= render 'posts/likes', post: Post.fifth, voter: @voter %></h3>
@@ -150,7 +161,7 @@
       <div class="project-home"  onclick="location.href='/replastic';">
         <%=  image_tag("replast1.jpg", alt: "design strategy projects") %>
         <div class="project-text">
-          <h2 class="description">Design Strategy</h2>
+          <h2 class="description">Replastic</h2>
           <p class="description">Designed a manual to upcycle plastic in the Amazon</p>
           <div class="description like">
               <a onclick='event.stopPropagation();' class="heart" id="link-post-<%= Post.last.id %>"><%= render 'posts/like_link', post: Post.last, voter: @voter %></a>
@@ -162,7 +173,7 @@
 
     <footer>
       <p>follow me on <a target=”_blank” href="https://twitter.com/meghanxmartin">twitter</a> for hot takes</p>
-      <p>view my <%= link_to 'resume', asset_path('MeghanResume.pdf'), :target => "_blank"  %></p>
+      <p>view my <%= link_to 'resume', asset_path('Resume.pdf'), :target => "_blank"  %></p>
       <p>meghanxmartin@gmail.com</p>
 <!--       <div class="toggle-container">
         <input type="checkbox" id="switch" name="theme" /><label for="switch">Toggle</label>

@@ -23,4 +23,7 @@ class PagesController < ApplicationController
 
   def freelance
   end
+
+  def univers
+  end
 end
