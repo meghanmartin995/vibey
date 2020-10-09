@@ -21,8 +21,7 @@ function home1() {
     {
         "src": `https://res.cloudinary.com/dq61mo2kj/image/upload/v1594661334/image_processing20200518-1504-r0dtrg-1_v2lygd.png`
     }, {
-        'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1598206583/designmate3_mltt8w.png'
-    }, {
+
         'src': 'https://res.cloudinary.com/dq61mo2kj/image/upload/v1594670310/Fancier_Screens_v1-01_uavvpi.png'
     }
 
